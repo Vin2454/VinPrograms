@@ -9,6 +9,8 @@ namespace VinPrograms
         public void LongestSubSequenceWithSorting()
         {
             int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
+            //int[] arr = { 1, 2, 3, 5, 6, 7, 8, 9 };
+
 
             if (arr.Length == 0)
             {
@@ -17,12 +19,14 @@ namespace VinPrograms
             }
             Array.Sort(arr);
             int pointer = 0;
-            int longestSequenceCount = 0;
-            int currentSequenceCount = 0;
+            int longestSequenceCount = 1;
+            int currentSequenceCount = 1;
             while (pointer < arr.Length - 1)
             {
                 if (arr[pointer + 1] == arr[pointer] + 1)
                     currentSequenceCount++;
+                else
+                    currentSequenceCount = 1;
                 longestSequenceCount = Math.Max(currentSequenceCount, longestSequenceCount);
                 pointer++;
             }
@@ -31,6 +35,8 @@ namespace VinPrograms
         public void LongestSubSequenceWithoutSorting()
         {
             int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
+            //int[] arr = { 1, 3 }; // It's returning 1 which is incorrect
+
             if (arr.Length == 0)
             {
                 Console.WriteLine($"longestSequenceCount: 0");
