@@ -4,9 +4,54 @@ using System.Text;
 
 namespace VinPrograms
 {
-    public class LongestConsecutiveSubsequence
+    public class LongestConsecutiveSequence
     {
-        public void LongestSubSequenceWithSorting()
+        /// <summary>
+        /// O(n^3)
+        /// </summary>
+        public void LongestConsecutiveSequenceBruteforce()
+        {
+            int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
+
+            if (arr.Length == 0)
+            {
+                Console.WriteLine($"longestSequenceCount: 0");
+                return;
+            }
+
+            int pointer = 0;
+            int longestSequenceCount = 1;
+            while (pointer < arr.Length)
+            {
+                int currentSequenceCount = 1;
+                int i = 1;
+                while(ArrayContains(arr, arr[pointer]+i))
+                {
+                    currentSequenceCount++;
+                    i++;
+                }
+                longestSequenceCount = Math.Max(currentSequenceCount, longestSequenceCount);
+                pointer++;
+            }
+            Console.WriteLine($"longestSequenceCount: {longestSequenceCount}");
+        }
+
+        private bool ArrayContains(int[] arr, int num)
+        {
+            int i = 0;
+            while (i < arr.Length)
+            {
+                if (num == arr[i])
+                    return true;
+                i++;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// O(nlogn)
+        /// </summary>
+        public void LongestConsecutiveSequenceWithSorting()
         {
             int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
             //int[] arr = { 1, 2, 3, 5, 6, 7, 8, 9 };
@@ -32,7 +77,11 @@ namespace VinPrograms
             }
             Console.WriteLine($"longestSequenceCount: {longestSequenceCount}");
         }
-        public void LongestSubSequenceWithoutSorting()
+
+        /// <summary>
+        /// O(n)
+        /// </summary>
+        public void LongestConsecutiveSequenceWithoutSorting()
         {
             int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
             //int[] arr = { 1, 3 }; // It's returning 1 which is incorrect
