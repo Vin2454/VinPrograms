@@ -7,9 +7,9 @@ namespace VinPrograms
         static void Main(string[] args)
         {
             LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
-            lcs.LongestConsecutiveSequenceBruteforce();
+            //lcs.LongestConsecutiveSequenceBruteforce();
             //lcs.LongestConsecutiveSequenceWithSorting();
-            //lcs.LongestConsecutiveSequenceWithoutSorting();
+            lcs.LongestConsecutiveSequenceWithoutSorting();
         }
     }
 }

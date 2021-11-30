@@ -84,7 +84,6 @@ namespace VinPrograms
         public void LongestConsecutiveSequenceWithoutSorting()
         {
             int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
-            //int[] arr = { 1, 3 }; // It's returning 1 which is incorrect
 
             if (arr.Length == 0)
             {
@@ -102,6 +101,9 @@ namespace VinPrograms
 
             foreach (int num in unorderedSet)
             {
+                /// if hashSet containts previous number,don't get into loop
+                /// e.g: for input {1,2,3}, only for 1 there would be iteration with count 3 and for 2 & 3 the condition fails and
+                /// does not get into the loop.
                 if (!unorderedSet.Contains(num - 1))
                 {
                     int currentNumber = num;
