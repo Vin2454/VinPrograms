@@ -13,15 +13,17 @@ namespace VinPrograms
         /// </summary>
         public void PrintLongestMountainMethod1()
         {
-            //int[] arr = {5,6,1,2,3,4,5,4,3,2,0,1,2,3,-2,4 };
-            int[] arr = { 1, 2, 3, 2, 1, 0, 2, 3, 1 };
+            //int[] arr = { 5, 6, 1, 2, 3, 4, 5, 4, 3, 2, 0, 1, 2, 3, -2, 4 };
+            //int[] arr = { 2, 1, 4, 7, 3, 2, 5 };
+            int[] arr = { 2, 2, 2 };
+
             int i = 1;
             int highestPeak = 0;
             while (i < arr.Length - 1)
             {
                 if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
                 {
-                    int currentPeak = 0;
+                    int currentPeak = 1;
 
                     int j = i;
                     while (j > 0 && arr[j] > arr[j - 1])
@@ -48,8 +50,10 @@ namespace VinPrograms
         /// </summary>
         public void PrintLongestMountain2PointerApproach()
         {
-            //int[] arr = {5,6,1,2,3,4,5,4,3,2,0,1,2,3,-2,4 };
-            int[] arr = { 1, 2, 3, 2, 1, 0, 2, 3, 1 };
+            int[] arr = { 5, 6, 1, 2, 3, 4, 5, 4, 3, 2, 0, 1, 2, 3, -2, 4 };
+            //int[] arr = { 2, 1, 4, 7, 3, 2, 5 };
+            //int[] arr = { 2, 2, 2 };
+
             int i = 1;
             int highestPeak = 0;
         }
