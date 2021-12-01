@@ -32,8 +32,6 @@ namespace VinPrograms
             }
         }
 
-        
-
         /// <summary>
         /// O(n^2), can try. But require to update PairSum class methods.
         /// </summary>
