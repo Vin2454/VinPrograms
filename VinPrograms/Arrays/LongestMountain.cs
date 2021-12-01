@@ -46,7 +46,7 @@ namespace VinPrograms
         }
 
         /// <summary>
-        /// O(n)
+        /// O(n), space complexity is O(1)
         /// </summary>
         public void PrintLongestMountain2PointerApproach()
         {
@@ -54,8 +54,30 @@ namespace VinPrograms
             //int[] arr = { 2, 1, 4, 7, 3, 2, 5 };
             //int[] arr = { 2, 2, 2 };
 
-            int i = 1;
-            int highestPeak = 0;
+            int N = arr.Length;
+            int highestPeak = 0, start = 0;
+            while (start < N)
+            {
+                int end = start;
+                // if base is a left-boundary
+                if (end + 1 < N && arr[end] < arr[end + 1])
+                {
+                    // set end to the peak of this potential mountain
+                    while (end + 1 < N && arr[end] < arr[end + 1]) end++;
+
+                    // if end is really a peak..
+                    if (end + 1 < N && arr[end] > arr[end + 1])
+                    {
+                        // set end to the right-boundary of mountain
+                        while (end + 1 < N && arr[end] > arr[end + 1]) end++;
+                        // record candidate answer
+                        highestPeak = Math.Max(highestPeak, end - start + 1);
+                    }
+                }
+
+                start = Math.Max(end, start + 1);
+            }
+            Console.WriteLine($"Highest Peak is { highestPeak}");
         }
     }
 }
