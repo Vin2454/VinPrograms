@@ -11,15 +11,19 @@ namespace VinPrograms
             //pws.PrintPairWithSumWithSortingAndBinarySearch();
             //pws.PrintPairWithSumWithoutSortingAndUsingHashSet();
 
-            TripletSum ts = new TripletSum();
+            //TripletSum ts = new TripletSum();
             //ts.PrintTriletSumBruteforce();
             //ts.PrintTriletSumUsingSortingAnd2Pointers();
-            ts.PrintTriletSumUsingHashSet();
+            //ts.PrintTriletSumUsingHashSet();
 
             //LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
             //lcs.LongestConsecutiveSequenceBruteforce();
             //lcs.LongestConsecutiveSequenceWithSorting();
             //lcs.LongestConsecutiveSequenceWithSortingAndUsingHashSet();
+
+            LongestMountain lm = new LongestMountain();
+            //lm.PrintLongestMountainMethod1();
+            lm.PrintLongestMountain2PointerApproach();
         }
     }
 }
