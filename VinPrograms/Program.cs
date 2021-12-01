@@ -6,10 +6,15 @@ namespace VinPrograms
     {
         static void Main(string[] args)
         {
-            LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
+            PairWithSum pws = new PairWithSum();
+            //pws.PrintPairWithSumBruteforce();
+            //pws.PrintPairWithSumWithSortingAndBinarySearch();
+            pws.PrintPairWithSumWithoutSortingAndUsingHashSet();
+
+            //LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
             //lcs.LongestConsecutiveSequenceBruteforce();
             //lcs.LongestConsecutiveSequenceWithSorting();
-            lcs.LongestConsecutiveSequenceWithoutSorting();
+            //lcs.LongestConsecutiveSequenceWithSortingAndUsingHashSet();
         }
     }
 }

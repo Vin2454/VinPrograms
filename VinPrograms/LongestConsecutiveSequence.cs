@@ -36,22 +36,10 @@ namespace VinPrograms
             Console.WriteLine($"longestSequenceCount: {longestSequenceCount}");
         }
 
-        private bool ArrayContains(int[] arr, int num)
-        {
-            int i = 0;
-            while (i < arr.Length)
-            {
-                if (num == arr[i])
-                    return true;
-                i++;
-            }
-            return false;
-        }
-
         /// <summary>
         /// O(nlogn)
         /// </summary>
-        public void LongestConsecutiveSequenceWithSorting()
+        public void LongestConsecutiveSequenceWithSortingAndUsingHashSet()
         {
             int[] arr = { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
             //int[] arr = { 1, 2, 3, 5, 6, 7, 8, 9 };
@@ -119,6 +107,18 @@ namespace VinPrograms
                 }
             }
             Console.WriteLine($"longestSequenceCount: {longestSequenceCount}");
+        }
+
+        private bool ArrayContains(int[] arr, int num)
+        {
+            int i = 0;
+            while (i < arr.Length)
+            {
+                if (num == arr[i])
+                    return true;
+                i++;
+            }
+            return false;
         }
     }
 }
