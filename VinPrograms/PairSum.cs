@@ -4,24 +4,27 @@ using System.Text;
 
 namespace VinPrograms
 {
-    public class PairWithSum
+    /// <summary>
+    /// Array Length should be minimum 2
+    /// </summary>
+    public class PairSum
     {
         /// <summary>
         /// O(n^2)
         /// </summary>
         public void PrintPairWithSumBruteforce()
         {
-            int[] array = { 10, 5, 2, 3, -6, 9, 11 };
+            int[] arr = { 10, 5, 2, 3, -6, 9, 11 };
             int target = 5;
             int i = 0;
-            while (i < array.Length - 1)
+            while (i < arr.Length - 1)
             {
                 int j = i + 1;
-                while (j < array.Length)
+                while (j < arr.Length)
                 {
-                    if (array[i] + array[j] == target)
+                    if (arr[i] + arr[j] == target)
                     {
-                        Console.WriteLine($"Sum of pair {array[i]} & {array[j]} is {target}");
+                        Console.WriteLine($"Sum of pair {arr[i]} & {arr[j]} is {target}");
                         break;
                     }
                     j++;
@@ -35,17 +38,17 @@ namespace VinPrograms
         /// </summary>
         public void PrintPairWithSumWithSortingAndBinarySearch()
         {
-            int[] array = { 10, 5, 2, 3, -6, 9, 11 };
+            int[] arr = { 10, 5, 2, 3, -6, 9, 11 };
             int target = 5;
-            Array.Sort(array);//{-6,2,3,5,9,10,11}
+            Array.Sort(arr);//{-6,2,3,5,9,10,11}
 
             int i = 0;
-            while (i < array.Length)
+            while (i < arr.Length)
             {
-                int key = target - array[i];
-                if (BinarySearch(array, key) != -1)
+                int key = target - arr[i];
+                if (BinarySearch(arr, key) != -1)
                 {
-                    Console.WriteLine($"Sum of pair {array[i]} & {key} is {target}");
+                    Console.WriteLine($"Sum of pair {arr[i]} & {key} is {target}");
                 }
                 i++;
             }
@@ -56,18 +59,18 @@ namespace VinPrograms
         /// </summary>
         public void PrintPairWithSumWithoutSortingAndUsingHashSet()
         {
-            int[] array = { 1, 2, 3, 2 };
+            int[] arr = { 1, 2, 3, 2 };
             int target = 4;
 
             HashSet<int> unorderedSet = new HashSet<int>();
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (!unorderedSet.Contains(target - array[i]))
+                if (!unorderedSet.Contains(target - arr[i]))
                 {
-                    unorderedSet.Add(array[i]);
+                    unorderedSet.Add(arr[i]);
                 }
                 else
-                    Console.WriteLine($"Sum of pair {array[i]} & {target - array[i]} is {target}");
+                    Console.WriteLine($"Sum of pair {arr[i]} & {target - arr[i]} is {target}");
             }
         }
 

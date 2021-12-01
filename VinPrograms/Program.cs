@@ -6,10 +6,15 @@ namespace VinPrograms
     {
         static void Main(string[] args)
         {
-            PairWithSum pws = new PairWithSum();
+            //PairSum pws = new PairSum();
             //pws.PrintPairWithSumBruteforce();
             //pws.PrintPairWithSumWithSortingAndBinarySearch();
-            pws.PrintPairWithSumWithoutSortingAndUsingHashSet();
+            //pws.PrintPairWithSumWithoutSortingAndUsingHashSet();
+
+            TripletSum ts = new TripletSum();
+            //ts.PrintTriletSumBruteforce();
+            //ts.PrintTriletSumUsingSortingAnd2Pointers();
+            ts.PrintTriletSumUsingHashSet();
 
             //LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
             //lcs.LongestConsecutiveSequenceBruteforce();
