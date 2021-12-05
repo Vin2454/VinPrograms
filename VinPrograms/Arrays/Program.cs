@@ -26,8 +26,11 @@ namespace VinPrograms
             //lm.PrintLongestMountainMethod1();
             //lm.PrintLongestMountain2PointerApproach();
 
-            TrappingRainWater trw = new TrappingRainWater();
-            trw.Trap();
+            //TrappingRainWater trw = new TrappingRainWater();
+            //trw.Trap();
+
+            ShortestUnsortedSubArray susa = new ShortestUnsortedSubArray();
+            susa.FindUnsortedSubarrayBrueforce();
         }
     }
 }
