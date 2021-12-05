@@ -1,4 +1,5 @@
 ﻿using System;
+using VinPrograms.Arrays;
 
 namespace VinPrograms
 {
@@ -21,9 +22,12 @@ namespace VinPrograms
             //lcs.LongestConsecutiveSequenceWithSorting();
             //lcs.LongestConsecutiveSequenceWithSortingAndUsingHashSet();
 
-            LongestMountain lm = new LongestMountain();
+            //LongestMountain lm = new LongestMountain();
             //lm.PrintLongestMountainMethod1();
-            lm.PrintLongestMountain2PointerApproach();
+            //lm.PrintLongestMountain2PointerApproach();
+
+            TrappingRainWater trw = new TrappingRainWater();
+            trw.Trap();
         }
     }
 }

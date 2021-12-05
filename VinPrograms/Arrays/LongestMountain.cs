@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VinPrograms
+namespace VinPrograms.Arrays
 {
     public class LongestMountain
     {

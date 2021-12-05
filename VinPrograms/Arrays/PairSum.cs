@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VinPrograms
+namespace VinPrograms.Arrays
 {
     /// <summary>
     /// Array Length should be minimum 2
