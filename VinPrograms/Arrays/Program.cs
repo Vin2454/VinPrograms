@@ -30,7 +30,9 @@ namespace VinPrograms
             //trw.Trap();
 
             ShortestUnsortedSubArray susa = new ShortestUnsortedSubArray();
-            susa.FindUnsortedSubarrayBrueforce();
+            //susa.FindUnsortedSubarrayBrueforceWithSorting();
+            //susa.FindUnsortedSubarrayWithoutSortingIncorrectThoughtProcess();
+            susa.FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess();
         }
     }
 }
