@@ -29,10 +29,13 @@ namespace VinPrograms
             //TrappingRainWater trw = new TrappingRainWater();
             //trw.Trap();
 
-            ShortestUnsortedSubArray susa = new ShortestUnsortedSubArray();
+            //ShortestUnsortedSubArray susa = new ShortestUnsortedSubArray();
             //susa.FindUnsortedSubarrayBrueforceWithSorting();
             //susa.FindUnsortedSubarrayWithoutSortingIncorrectThoughtProcess();
-            susa.FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess();
+            //susa.FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess();
+
+            MinimumSwapsToMakeSingleArraySorted mstmsas = new MinimumSwapsToMakeSingleArraySorted();
+            mstmsas.CountMinimumSwaps();
         }
     }
 }
