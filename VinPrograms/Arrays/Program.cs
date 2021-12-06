@@ -37,8 +37,11 @@ namespace VinPrograms
             //MinimumSwapsToMakeSingleArraySorted mstmsas = new MinimumSwapsToMakeSingleArraySorted();
             //mstmsas.CountMinimumSwaps();
 
-            MaximumSubArraySum msas = new MaximumSubArraySum();
-            msas.CalculateMaximumSubArraySum();
+            //MaximumSubArraySum msas = new MaximumSubArraySum();
+            //msas.CalculateMaximumSubArraySum();
+
+            MinimumDifference md = new MinimumDifference();
+            md.PrintMinimumDifference();
         }
     }
 }
