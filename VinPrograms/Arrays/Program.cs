@@ -43,8 +43,11 @@ namespace VinPrograms
             //MinimumDifference md = new MinimumDifference();
             //md.PrintMinimumDifference();
 
-            ArrayProducts ap = new ArrayProducts();
-            ap.ProductArray();
+            //ArrayProducts ap = new ArrayProducts();
+            //ap.ProductArray();
+
+            //BusyPerson bp = new BusyPerson();
+            //bp.CountActivities();
         }
     }
 }
