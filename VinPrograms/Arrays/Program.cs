@@ -40,8 +40,11 @@ namespace VinPrograms
             //MaximumSubArraySum msas = new MaximumSubArraySum();
             //msas.CalculateMaximumSubArraySum();
 
-            MinimumDifference md = new MinimumDifference();
-            md.PrintMinimumDifference();
+            //MinimumDifference md = new MinimumDifference();
+            //md.PrintMinimumDifference();
+
+            ArrayProducts ap = new ArrayProducts();
+            ap.ProductArray();
         }
     }
 }
