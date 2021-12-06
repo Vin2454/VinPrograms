@@ -89,10 +89,10 @@ namespace VinPrograms.Arrays
         /// </summary>
         public void FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess()
         {
-            //int[] nums = { 1, 2, 3, 4, 5, 8, 6, 7, 9, 10, 11 };
+            int[] nums = { 1, 2, 3, 4, 5, 8, 6, 7, 9, 10, 11 };
             //int[] nums = { 2, 6, 4, 8, 10, 9, 15 };
             //int[] nums = { 1, 2, 3, 4 };
-            int[] nums = { 1 };
+            //int[] nums = { 1 }; // exception to be handled here
 
             int smallest = int.MaxValue;
             int largest = int.MinValue;
@@ -100,10 +100,11 @@ namespace VinPrograms.Arrays
             for (int i = 0; i < nums.Length; i++)
             {
                 int current = nums[i];
-                if(IsOutOfOrder(nums,i))
+                if (IsOutOfOrder(nums, i))
                 {
                     smallest = Math.Min(smallest, current);
                     largest = Math.Max(largest, current);
+                    Console.WriteLine($"smallest:{smallest} largest:{largest}");
                 }
             }
             if (smallest == int.MaxValue)
@@ -113,12 +114,12 @@ namespace VinPrograms.Arrays
             }
 
             int left = 0;
-            while (smallest>=nums[left])
+            while (smallest >= nums[left])
             {
                 left++;
             }
             int right = nums.Length - 1;
-            while (largest<=nums[right])
+            while (largest <= nums[right])
             {
                 right--;
             }
@@ -127,6 +128,8 @@ namespace VinPrograms.Arrays
         private bool IsOutOfOrder(int[] arr, int i)
         {
             int current = arr[i];
+
+            // edge cases
             if (i == 0)
                 return current > arr[1];
             if (i == arr.Length - 1)
