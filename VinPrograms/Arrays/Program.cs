@@ -34,8 +34,11 @@ namespace VinPrograms
             //susa.FindUnsortedSubarrayWithoutSortingIncorrectThoughtProcess();
             //susa.FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess();
 
-            MinimumSwapsToMakeSingleArraySorted mstmsas = new MinimumSwapsToMakeSingleArraySorted();
-            mstmsas.CountMinimumSwaps();
+            //MinimumSwapsToMakeSingleArraySorted mstmsas = new MinimumSwapsToMakeSingleArraySorted();
+            //mstmsas.CountMinimumSwaps();
+
+            MaximumSubArraySum msas = new MaximumSubArraySum();
+            msas.CalculateMaximumSubArraySum();
         }
     }
 }
