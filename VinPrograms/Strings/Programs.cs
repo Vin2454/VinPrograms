@@ -6,13 +6,13 @@ namespace VinPrograms.Strings
 {
     class Programs
     {
-        static void Main(string[] args)
-        {
-            //Basics b = new Basics();
-            //b.StringBasics();
+        //static void Main(string[] args)
+        //{
+        //    //Basics b = new Basics();
+        //    //b.StringBasics();
 
-            Extensions e = new Extensions();
-            e.PrintAllOccurrencesOfAGivenString();
-        }
+        //    //Extensions e = new Extensions();
+        //    //e.PrintAllOccurrencesOfAGivenString();
+        //}
     }
 }
