@@ -22,8 +22,12 @@ namespace VinPrograms.BinarySearch
             //Pivot p = new Pivot();
             //p.FindPivot();
 
-            SearchElementInSortedRoatedArray seisra = new SearchElementInSortedRoatedArray();
-            seisra.SearchElementInSortedAndRoatedArray();
+            //SearchElementInSortedRoatedArray seisra = new SearchElementInSortedRoatedArray();
+            //seisra.SearchElementInSortedAndRoatedArray();
+
+            SquareRoot sr = new SquareRoot();
+            //sr.FindSquareRootWithoutPrecision();
+            sr.FindSquareRootWithPrecision();
         }
     }
 }
