@@ -11,10 +11,13 @@ namespace VinPrograms.BinarySearch
             //BinarySearch bs = new BinarySearch();
             //bs.BinarySearchBasic();
 
-            FirstAndLastOccurrenceOfElement falooe = new FirstAndLastOccurrenceOfElement();
-            //falooe.FindFirstAndLastOccurrenceOfAnElementWithoutBinarySearch();
-            falooe.FindFirstOccurrenceOfAnElementWithBinarySearch();
-            falooe.FindLastOccurrenceOfAnElementWithBinarySearch();
+            //FirstAndLastOccurrenceOfElement falooe = new FirstAndLastOccurrenceOfElement();
+            ////falooe.FindFirstAndLastOccurrenceOfAnElementWithoutBinarySearch();
+            //falooe.FindFirstOccurrenceOfAnElementWithBinarySearch();
+            //falooe.FindLastOccurrenceOfAnElementWithBinarySearch();
+
+            PeekIndexInMountainArray piima = new PeekIndexInMountainArray();
+            piima.FindPeekIndexInMountainArray();
         }
     }
 }
