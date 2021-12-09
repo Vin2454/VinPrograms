@@ -10,11 +10,11 @@ namespace VinPrograms.BinarySearch
         {
             int[] arr = { 2, 3, 4, 10, 40 };
             int key = 10;
-            int left = 0;
-            int right = arr.Length - 1;
-            while (left <= right)
+            int start = 0;
+            int end = arr.Length - 1;
+            while (start <= end)
             {
-                int middle = left + (right - left) / 2;
+                int middle = start + (end - start) / 2;
 
                 if (key == arr[middle])
                 {
@@ -22,11 +22,37 @@ namespace VinPrograms.BinarySearch
                     return;
                 }
                 else if (key < arr[middle])
-                    right = middle - 1;
+                    end = middle - 1;
                 else
-                    left = middle + 1;
+                    start = middle + 1;
             }
             Console.WriteLine($"key not found.");
         }
+
+        //public void BitwiseBinarySearch()
+        //{
+        //    int[] arr = { 1, 3, 5, 7, 8 };
+        //    int key = 3;
+        //    int size = arr.Length;
+        //    int index, power;
+
+        //    //Compute the first power of 2 that is >= size
+        //    for (power = 1; power < size; power <<= 1) ;
+
+        //    //loop while(power > 0)
+        //    //and divide power by two each iteration
+        //    for (index = 0; ; power >>= 1)
+        //    {
+
+        //        //if the next condition is true
+        //        //it means that the power value can contribute to the "sum"(a closer index where target might be)
+        //        if (index + power < size && arr[index + power] <= key)
+        //            index += power;
+        //    }
+        //    //if the element at position [index] == key,
+        //    //the key value is present in the array
+        //    if (arr[index] == key)
+        //        Console.WriteLine($"key found at {index}.");
+        //}
     }
 }

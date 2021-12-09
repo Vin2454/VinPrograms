@@ -8,8 +8,13 @@ namespace VinPrograms.BinarySearch
     {
         static void Main(string[] args)
         {
-            BinarySearch bs = new BinarySearch();
-            bs.BinarySearchBasic();
+            //BinarySearch bs = new BinarySearch();
+            //bs.BinarySearchBasic();
+
+            FirstAndLastOccurrenceOfElement falooe = new FirstAndLastOccurrenceOfElement();
+            //falooe.FindFirstAndLastOccurrenceOfAnElementWithoutBinarySearch();
+            falooe.FindFirstOccurrenceOfAnElementWithBinarySearch();
+            falooe.FindLastOccurrenceOfAnElementWithBinarySearch();
         }
     }
 }
