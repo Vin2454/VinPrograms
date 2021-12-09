@@ -16,8 +16,11 @@ namespace VinPrograms.BinarySearch
             //falooe.FindFirstOccurrenceOfAnElementWithBinarySearch();
             //falooe.FindLastOccurrenceOfAnElementWithBinarySearch();
 
-            PeekIndexInMountainArray piima = new PeekIndexInMountainArray();
-            piima.FindPeekIndexInMountainArray();
+            //PeekIndexInMountainArray piima = new PeekIndexInMountainArray();
+            //piima.FindPeekIndexInMountainArray();
+
+            Pivot p = new Pivot();
+            p.FindPivot();
         }
     }
 }
