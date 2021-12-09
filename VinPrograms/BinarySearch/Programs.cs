@@ -19,8 +19,11 @@ namespace VinPrograms.BinarySearch
             //PeekIndexInMountainArray piima = new PeekIndexInMountainArray();
             //piima.FindPeekIndexInMountainArray();
 
-            Pivot p = new Pivot();
-            p.FindPivot();
+            //Pivot p = new Pivot();
+            //p.FindPivot();
+
+            SearchElementInSortedRoatedArray seisra = new SearchElementInSortedRoatedArray();
+            seisra.SearchElementInSortedAndRoatedArray();
         }
     }
 }
