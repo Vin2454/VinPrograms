@@ -6,8 +6,8 @@ namespace VinPrograms.BinarySearch
 {
     public class Programs
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
             //BinarySearch bs = new BinarySearch();
             //bs.BinarySearchBasic();
 
@@ -32,8 +32,8 @@ namespace VinPrograms.BinarySearch
             //BookAllocation ba = new BookAllocation();
             //ba.AllocateBooks();
 
-            AggressiveCows ac = new AggressiveCows();
-            ac.AggressiveCowsSolve();
-        }
+            //AggressiveCows ac = new AggressiveCows();
+            //ac.AggressiveCowsSolve();
+        //}
     }
 }
