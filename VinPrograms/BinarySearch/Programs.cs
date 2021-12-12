@@ -29,8 +29,11 @@ namespace VinPrograms.BinarySearch
             ////sr.FindSquareRootWithoutPrecision();
             //sr.FindSquareRootWithPrecision();
 
-            BookAllocation ba = new BookAllocation();
-            ba.AllocateBooks();
+            //BookAllocation ba = new BookAllocation();
+            //ba.AllocateBooks();
+
+            AggressiveCows ac = new AggressiveCows();
+            ac.AggressiveCowsSolve();
         }
     }
 }
