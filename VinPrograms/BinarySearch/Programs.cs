@@ -25,9 +25,12 @@ namespace VinPrograms.BinarySearch
             //SearchElementInSortedRoatedArray seisra = new SearchElementInSortedRoatedArray();
             //seisra.SearchElementInSortedAndRoatedArray();
 
-            SquareRoot sr = new SquareRoot();
-            //sr.FindSquareRootWithoutPrecision();
-            sr.FindSquareRootWithPrecision();
+            //SquareRoot sr = new SquareRoot();
+            ////sr.FindSquareRootWithoutPrecision();
+            //sr.FindSquareRootWithPrecision();
+
+            BookAllocation ba = new BookAllocation();
+            ba.AllocateBooks();
         }
     }
 }
