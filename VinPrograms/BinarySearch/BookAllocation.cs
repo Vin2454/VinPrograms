@@ -13,6 +13,7 @@ namespace VinPrograms.BinarySearch
         /// o(n)
         /// **Here basically we use binary search on Maximum number of pages a student can read in each distribution 
         /// (which we assume as a mid(solution) in binary search)**
+        /// First We calculate mid and then check IsValidSolution. So for the solution mid will be returned the one before the IsValidSolution method call.
         /// </summary>
         public void AllocateBooks()
         {
