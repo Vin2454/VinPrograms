@@ -17,14 +17,66 @@ namespace VinPrograms.BinarySearch
         public void AllocateBooks()
         {
             //Number of pages in books
-            int[] arr = { 12, 34, 67, 90 };//books array
-            //int[] arr = { 10, 20, 30, 40 };//books array
-            int n = arr.Length;
-            int m = 2; // No. of students
+            //int[] arr = { 12, 34, 67, 90 };//books array
+            //int[] arr = { 90, 77, 34, 12 };//books array
 
-            int minimumNumberOfPages = FindPages(arr, n, m);
+            //int[] arr = { 10, 20, 30, 40 };//books array
+            int[] arr = { 30, 20, 10, 40 };//books array  
+
+            int n = arr.Length;
+            int m = 3; // No. of students
+
+            //int minimumNumberOfPages = FindPages(arr, n, m);
+            int minimumNumberOfPages = FindPages2(arr, n, m);
 
             Console.WriteLine($"Minimum number of pages = {minimumNumberOfPages}");
+        }
+
+        private int FindPages2(int[] arr,int numberOfBooks,int numberOfStudents)
+        {
+            if (numberOfBooks < numberOfStudents)
+                return -1;
+            int maxValue = 0;
+            int sumValue = 0;
+            for (int i = 0; i < numberOfBooks; i++)
+            {
+                maxValue = Math.Max(maxValue, arr[i]);
+                sumValue += arr[i];
+            }
+
+            int start = maxValue;
+            int end = sumValue;
+            int answer = -1;
+            while (start<=end)
+            {
+                int mid = start + (end - start) / 2;
+                if(isPossibleAnswer(arr,numberOfStudents,mid))
+                {
+                    answer = mid;
+                    end = mid - 1;
+                }
+                else
+                {
+                    start = mid + 1;
+                }
+            }
+            return answer;
+        }
+
+        private bool isPossibleAnswer(int[] arr, int numberOfStudents, int mid)
+        {
+            int numberOfStudentsRequiredForAllTheBooksAllocation = 1;
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+                if(sum>mid)
+                {
+                    numberOfStudentsRequiredForAllTheBooksAllocation++;
+                    sum = arr[i];
+                }
+            }
+            return numberOfStudentsRequiredForAllTheBooksAllocation <= numberOfStudents;
         }
 
         private int FindPages(int[] arr,
