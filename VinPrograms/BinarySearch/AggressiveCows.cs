@@ -24,6 +24,8 @@ namespace VinPrograms.BinarySearch
             //int[] stalls = { 4, 2, 1, 3, 6 };
             //int cows = 1;
             //int pos = stalls[0];
+            // int start=0;
+            // int end= arr[arr.Length-1]-arr[0] // assuming array is sorted
             //for (int i = 0; i < stalls.Length; i++)
             //{
 
