@@ -18,8 +18,11 @@ namespace VinPrograms.Sortings
             //BubbleSort bs = new BubbleSort();
             //bs.ApplyBubbleSort();
 
-            InsertionSort Ins = new InsertionSort();
-            Ins.ApplyInsertionSort();
+            //InsertionSort Ins = new InsertionSort();
+            //Ins.ApplyInsertionSort();
+
+            //MergeSort ms = new MergeSort();
+            //ms.ApplyMergeSort();
         }
     }
 }
