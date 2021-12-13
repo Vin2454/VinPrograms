@@ -7,7 +7,7 @@ namespace VinPrograms.Sortings
     public class SelectionSort
     {
         /// <summary>
-        /// Time complexity: o(n*n), Space complexity: o(1)
+        /// Worst case Time complexity: o(n*n), Space complexity: o(1)
         /// Smallest will be sorted&fixed first
         /// Use case: When array size is small
         /// Not a stable algorithm

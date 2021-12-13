@@ -15,8 +15,11 @@ namespace VinPrograms.Sortings
             //SelectionSort ss = new SelectionSort();
             //ss.ApplySelectionSort();
 
-            BubbleSort bs = new BubbleSort();
-            bs.ApplyBubbleSort();
+            //BubbleSort bs = new BubbleSort();
+            //bs.ApplyBubbleSort();
+
+            InsertionSort Ins = new InsertionSort();
+            Ins.ApplyInsertionSort();
         }
     }
 }

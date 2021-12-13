@@ -6,29 +6,36 @@ namespace VinPrograms.Sortings
 {
     /// <summary>
     /// Worst case Time complexity: o(n*n), Space complexity: o(1)
-    /// But best case time complexity is o(n)
-    /// Largest will be sorted &fixed first
-    /// Use case: In each i'th round, i'th largest element will be identified
-    /// A stable algorithm
+    /// Best case time complexity: o(n)
+    /// Use case: small array and partially sorted
+    /// A stable  & adaptable algorithm
     /// </summary>
-    public class BubbleSort
+    public class InsertionSort
     {
-        public void ApplyBubbleSort()
+        public void ApplyInsertionSort()
         {
             int[] arr = { 64, 25, 12, 22, 11 };
 
-            int i = 0;
-            while (i < arr.Length - 1)
+            int i = 1;
+            while (i < arr.Length)
             {
-                int currentIndex = 0;
-                while (currentIndex < arr.Length - 1 - i)
+                int previousIndex = i - 1;
+                int temp = arr[i];
+                while (previousIndex >= 0)
                 {
-                    if (arr[currentIndex] > arr[currentIndex + 1])
-                        Swap(arr, currentIndex, currentIndex + 1);
-
-                    currentIndex++;
+                    if (arr[previousIndex] > temp)
+                    {
+                        //shift
+                        arr[previousIndex + 1] = arr[previousIndex];
+                    }
+                    else
+                    {
+                        break;
+                    }
+                    previousIndex--;
                 }
 
+                arr[previousIndex + 1] = temp;
                 i++;
             }
 
