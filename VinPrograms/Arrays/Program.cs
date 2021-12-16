@@ -2,7 +2,7 @@
 
 namespace VinPrograms.Arrays
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -54,6 +54,9 @@ namespace VinPrograms.Arrays
             //MoveZerosToEnd mzte = new MoveZerosToEnd();
             ////mzte.MovingZerosToEndMethodIncorrectMethod();
             //mzte.MovingZerosToEndCorrectMethod();
+
+            //RotateArray ra = new RotateArray();
+            //ra.RotateAnArrayByKstepsWithFormula();
         }
     }
 }
