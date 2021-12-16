@@ -57,6 +57,9 @@ namespace VinPrograms.Arrays
 
             //RotateArray ra = new RotateArray();
             //ra.RotateAnArrayByKstepsWithFormula();
+
+            //CheckIfSortedRotatedArray cisra = new CheckIfSortedRotatedArray();
+            //cisra.CheckIfAnArrayIsSortedAndRotated();
         }
     }
 }
