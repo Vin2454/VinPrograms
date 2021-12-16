@@ -48,8 +48,12 @@ namespace VinPrograms.Arrays
             //BusyPerson bp = new BusyPerson();
             //bp.CountActivities();
 
-            MergeSortedArrays msa = new MergeSortedArrays();
-            msa.MergeTwoSortedArrays();
+            //MergeSortedArrays msa = new MergeSortedArrays();
+            //msa.MergeTwoSortedArrays();
+
+            //MoveZerosToEnd mzte = new MoveZerosToEnd();
+            ////mzte.MovingZerosToEndMethodIncorrectMethod();
+            //mzte.MovingZerosToEndCorrectMethod();
         }
     }
 }
