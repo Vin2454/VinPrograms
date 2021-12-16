@@ -11,8 +11,9 @@ namespace VinPrograms.Arrays
         /// </summary>
         public void CheckIfAnArrayIsSortedAndRotated()
         {
-            int[] arr = { 3, 4, 5, 1, 2 }; //True
+            //int[] arr = { 3, 4, 5, 1, 2 }; //True
             //int[] arr = { 2, 1, 3, 4 }; //False
+            int[] arr = { 1,1,1};
 
             int n = arr.Length;
             int count = 0;
@@ -27,7 +28,7 @@ namespace VinPrograms.Arrays
             if (arr[n - 1] > arr[0])
                 count++;
 
-            Console.WriteLine(count == 1);
+            Console.WriteLine(count <= 1); //if only count == 1 used, { 1,1,1} will return false, expected true
         }
     }
 }
