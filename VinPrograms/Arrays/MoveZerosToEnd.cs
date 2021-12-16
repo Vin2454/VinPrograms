@@ -28,6 +28,7 @@ namespace VinPrograms.Arrays
         }
 
         /// <summary>
+        /// Question is to shift zeros to right, but we are shifting non-zeros to left
         /// Think to fix non-zeros, instead of thinking to fix zeros
         /// 1 3 12 0 0
         /// </summary>
