@@ -15,10 +15,13 @@ namespace VinPrograms.Strings
             //e.PrintAsciiCode();
             //e.PrintAllOccurrencesOfAGivenString();
 
-            ReplaceSpace20 rs2 = new ReplaceSpace20();
-            //rs2.Space20_WithExistingFunction();
-            //rs2.Space20_Notworking();
-            rs2.Space20_Working();
+            //ReplaceSpace20 rs2 = new ReplaceSpace20();
+            ////rs2.Space20_WithExistingFunction();
+            ////rs2.Space20_Notworking();
+            //rs2.Space20_Working();
+
+            //CheckSubset cs = new CheckSubset();
+            //cs.IsSubset();
         }
     }
 }
