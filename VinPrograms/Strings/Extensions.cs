@@ -6,6 +6,16 @@ namespace VinPrograms.Strings
 {
     public class Extensions
     {
+        public void PrintAsciiCode()
+        {
+            string input = "stephen";
+            char[] cArr = input.ToCharArray();
+            foreach (var item in cArr)
+            {
+                //Console.WriteLine(item); //prints actual char
+                Console.WriteLine((int)item); //prints ascii value
+            }
+        }
         public void PrintAllOccurrencesOfAGivenString()
         {
             string input = "I liked the movie, acting in movie was great!";
@@ -19,7 +29,7 @@ namespace VinPrograms.Strings
             int i = 0;
             while (true)
             {
-                i = input.IndexOf(searchWord, i);
+                i = input.IndexOf(searchWord, i); //string value, int startIndex
                 if (i == -1)
                     break;
                 occurrences.Add(i);
