@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace VinPrograms.Strings
@@ -41,6 +42,42 @@ namespace VinPrograms.Strings
                 }
             }
             Console.WriteLine(result);
+        }
+
+        /// <summary>
+        /// NOTE: THIS WILL NOT WORK WITH STRING WITH SPACES AND ONLY WORKS WITH STRING WITH CHARS
+        /// </summary>
+        public void MaximumOccurrenceOfACharacterDifferentMethod_JustForUnderstanding()
+        {
+            string input = "samples";
+            int[] arr = Enumerable.Repeat(0, 26).ToArray();
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                char ch = input[i];
+                int number = 0;
+                if (ch >= 'a' && ch <= 'z')
+                    number = ch - 'a';
+                else
+                    number = ch - 'A';
+
+                arr[number]++;
+            }
+
+            int maxi = -1;
+            int ans=-1;
+
+            for (int i = 0; i < 26; i++)
+            {
+                if(maxi<arr[i])
+                {
+                    ans = i;
+                    maxi = arr[i];
+                }
+            }
+
+            char finalAnswer = (char)('a' + ans);
+            Console.WriteLine(finalAnswer);
         }
     }
 }
