@@ -22,6 +22,9 @@ namespace VinPrograms.Strings
 
             //CheckSubset cs = new CheckSubset();
             //cs.IsSubset();
+
+            Subsequence ss = new Subsequence();
+            ss.PrintAndSortSubsequenceWithRecursion();
         }
     }
 }
