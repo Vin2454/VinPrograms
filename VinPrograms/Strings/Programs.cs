@@ -28,9 +28,9 @@ namespace VinPrograms.Strings
             ////rwis.ReverseWordsUsingSplit();
             //rwis.ReverseWords_Inplace_WithoutUsingExtraSpace();
 
-            MaxOccurrenceOfAChar mooc = new MaxOccurrenceOfAChar();
-            //mooc.MaximumOccurrenceOfACharacter();
-            mooc.MaximumOccurrenceOfACharacterDifferentMethod_JustForUnderstanding();
+            //MaxOccurrenceOfAChar mooc = new MaxOccurrenceOfAChar();
+            ////mooc.MaximumOccurrenceOfACharacter();
+            //mooc.MaximumOccurrenceOfACharacterDifferentMethod_JustForUnderstanding();
 
             //Subsequence ss = new Subsequence();
             //ss.PrintAndSortSubsequenceWithRecursion();

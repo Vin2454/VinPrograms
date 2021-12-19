@@ -55,12 +55,14 @@ namespace VinPrograms.Strings
             for (int i = 0; i < input.Length; i++)
             {
                 char ch = input[i];
-                int number = 0;
-                if (ch >= 'a' && ch <= 'z')
-                    number = ch - 'a';
-                else
-                    number = ch - 'A';
+                //int number = 0;
+                //if (ch >= 'a' && ch <= 'z')
+                //    number = ch - 'a';
+                //else
+                //    number = ch - 'A';
 
+                int number = 0;
+                number = ch - 'a';
                 arr[number]++;
             }
 
