@@ -6,6 +6,9 @@ namespace VinPrograms.Strings
 {
     public class Subsequence
     {
+        /// <summary>
+        /// 1) Include, Exclude 2) Reduce Input 3) left:output, right:output+input[0]
+        /// </summary>
         public void PrintAndSortSubsequenceWithRecursion()
         {
             string input = "ABC";
