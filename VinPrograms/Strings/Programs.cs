@@ -40,6 +40,9 @@ namespace VinPrograms.Strings
 
             //PermutationInAString pis = new PermutationInAString();
             //pis.PermuationInString();
+
+            RemoveAdjacentDuplicates radis = new RemoveAdjacentDuplicates();
+            radis.RemoveAdjacentDuplicatesInAString();
         }
     }
 }
