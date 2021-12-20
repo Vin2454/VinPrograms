@@ -34,6 +34,12 @@ namespace VinPrograms.Strings
 
             //Subsequence ss = new Subsequence();
             //ss.PrintAndSortSubsequenceWithRecursion();
+
+            //RemoveAllOccurrencesOfASubstring raooss = new RemoveAllOccurrencesOfASubstring();
+            //raooss.RemoveAllOccurrencesOfSubstring();
+
+            //PermutationInAString pis = new PermutationInAString();
+            //pis.PermuationInString();
         }
     }
 }
