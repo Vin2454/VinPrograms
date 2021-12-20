@@ -32,20 +32,20 @@ namespace VinPrograms.Strings
             ////mooc.MaximumOccurrenceOfACharacter();
             //mooc.MaximumOccurrenceOfACharacterDifferentMethod_JustForUnderstanding();
 
-            //Subsequence ss = new Subsequence();
-            //ss.PrintAndSortSubsequenceWithRecursion();
-
             //RemoveAllOccurrencesOfASubstring raooss = new RemoveAllOccurrencesOfASubstring();
             //raooss.RemoveAllOccurrencesOfSubstring();
-
-            //PermutationInAString pis = new PermutationInAString();
-            //pis.PermuationInString();
 
             //RemoveAdjacentDuplicates radis = new RemoveAdjacentDuplicates();
             //radis.RemoveAdjacentDuplicatesInAString();
 
             //StringCompression sc = new StringCompression();
             //sc.CompressString();
+
+            //PermutationInAString pis = new PermutationInAString();
+            //pis.PermuationInString();
+
+            //Subsequence ss = new Subsequence();
+            //ss.PrintAndSortSubsequenceWithRecursion();
         }
     }
 }

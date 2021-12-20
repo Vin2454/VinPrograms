@@ -12,7 +12,9 @@ namespace VinPrograms.Strings
 
             string output = "";
             List<string> result = new List<string>();
-            SubsequenceRecursion(input,output,result);
+            SubsequenceRecursion("main",input,output,result);
+
+            Console.WriteLine("-----------------Output-----------------------------------");
 
             foreach (var item in result)
             {
@@ -21,10 +23,13 @@ namespace VinPrograms.Strings
             //Sort();
         }
 
-        private void SubsequenceRecursion(string input,string output,List<string> result)
+        private void SubsequenceRecursion(string caller, string input,string output,List<string> result)
         {
+            Console.WriteLine($"caller: {caller} input:{input} output:{output}");
             if (input.Length == 0)
             {
+                Console.WriteLine($"-----Exit-----");
+
                 result.Add(output);
                 return;
             }
@@ -34,10 +39,10 @@ namespace VinPrograms.Strings
             string reducedInput = input.Substring(1);
 
             // includes
-            SubsequenceRecursion(reducedInput, output + ch, result);
+            SubsequenceRecursion("include",reducedInput, output + ch, result);
 
             // excludes
-            SubsequenceRecursion(reducedInput, output, result);
+            SubsequenceRecursion("exclude",reducedInput, output, result);
         }
     }
 }
