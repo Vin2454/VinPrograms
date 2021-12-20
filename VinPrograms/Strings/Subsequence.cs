@@ -25,7 +25,7 @@ namespace VinPrograms.Strings
 
         private void SubsequenceRecursion(string caller, string input,string output,List<string> result)
         {
-            Console.WriteLine($"caller: {caller} input:{input} output:{output}");
+            Console.WriteLine($"caller:{caller} input:{input} output:{output}");
             if (input.Length == 0)
             {
                 Console.WriteLine($"-----Exit-----");
