@@ -41,8 +41,11 @@ namespace VinPrograms.Strings
             //PermutationInAString pis = new PermutationInAString();
             //pis.PermuationInString();
 
-            RemoveAdjacentDuplicates radis = new RemoveAdjacentDuplicates();
-            radis.RemoveAdjacentDuplicatesInAString();
+            //RemoveAdjacentDuplicates radis = new RemoveAdjacentDuplicates();
+            //radis.RemoveAdjacentDuplicatesInAString();
+
+            //StringCompression sc = new StringCompression();
+            //sc.CompressString();
         }
     }
 }
