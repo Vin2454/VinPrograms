@@ -6,11 +6,11 @@ namespace VinPrograms.Strings
 {
     public class PermutationsOfAString
     {
-        int level = 0;
+        int swapsCount = 0;
         /// <summary>
         /// Can't be done using Binary Tree
-        /// Fix position, swap next elements with fix positioned element(From left to right)
-        /// Backtracking
+        /// From left to right, swap the position i and fix the position i
+        /// Backtracking, DFS
         /// Time Complexity: O(n*n!) Note that there are n! permutations and it requires O(n) time to print a permutation.
         /// Another approach is available @https://www.geeksforgeeks.org/c-program-to-print-all-permutations-of-a-given-string-2/
         /// </summary>
@@ -18,6 +18,7 @@ namespace VinPrograms.Strings
         {
             string input = "ABC";
             Permute(input, 0, input.Length - 1);
+            Console.WriteLine($"swapsCount: {swapsCount}");
         }
 
         private void Permute(string str, int left, int right)
@@ -41,6 +42,7 @@ namespace VinPrograms.Strings
 
         public String CharSwap(String input, int i, int j)
         {
+            swapsCount++;
             char temp = input[i];
             char[] cArray = input.ToCharArray();
 
