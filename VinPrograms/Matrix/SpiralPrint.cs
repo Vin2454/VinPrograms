@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VinPrograms.Arrays
+namespace VinPrograms.Matrix
 {
     public class SpiralPrint
     {
