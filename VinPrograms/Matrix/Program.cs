@@ -15,7 +15,8 @@ namespace VinPrograms.Matrix
             //rmb9.RotateMatrixBy90();
 
             //SearchInA2DMatrix si2m = new SearchInA2DMatrix();
-            //si2m.SearchIn2DMatrixWithBinarySearch();
+            ////si2m.SearchIn2DMatrixWithBinarySearch();
+            //si2m.SearchIn2DMatrixByReducingSearchSpace();
         }
     }
 }
