@@ -4,65 +4,68 @@ namespace VinPrograms.Arrays
 {
     public class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    //PairSum pws = new PairSum();
-        //    //pws.PrintPairWithSumBruteforce();
-        //    //pws.PrintPairWithSumWithSortingAndBinarySearch();
-        //    //pws.PrintPairWithSumWithoutSortingAndUsingHashSet();
+        static void Main(string[] args)
+        {
+            //PairSum pws = new PairSum();
+            //pws.PrintPairWithSumBruteforce();
+            //pws.PrintPairWithSumWithSortingAndBinarySearch();
+            //pws.PrintPairWithSumWithoutSortingAndUsingHashSet();
 
-        //    //TripletSum ts = new TripletSum();
-        //    //ts.PrintTriletSumBruteforce();
-        //    //ts.PrintTriletSumUsingSortingAnd2Pointers();
-        //    //ts.PrintTriletSumUsingHashSet();
+            //TripletSum ts = new TripletSum();
+            //ts.PrintTriletSumBruteforce();
+            //ts.PrintTriletSumUsingSortingAnd2Pointers();
+            //ts.PrintTriletSumUsingHashSet();
 
-        //    //LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
-        //    //lcs.LongestConsecutiveSequenceBruteforce();
-        //    //lcs.LongestConsecutiveSequenceWithSorting();
-        //    //lcs.LongestConsecutiveSequenceWithSortingAndUsingHashSet();
+            //LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
+            //lcs.LongestConsecutiveSequenceBruteforce();
+            //lcs.LongestConsecutiveSequenceWithSorting();
+            //lcs.LongestConsecutiveSequenceWithSortingAndUsingHashSet();
 
-        //    //LongestMountain lm = new LongestMountain();
-        //    //lm.PrintLongestMountainMethod1();
-        //    //lm.PrintLongestMountain2PointerApproach();
+            //LongestMountain lm = new LongestMountain();
+            //lm.PrintLongestMountainMethod1();
+            //lm.PrintLongestMountain2PointerApproach();
 
-        //    //TrappingRainWater trw = new TrappingRainWater();
-        //    //trw.Trap();
+            //TrappingRainWater trw = new TrappingRainWater();
+            //trw.Trap();
 
-        //    //ShortestUnsortedSubArray susa = new ShortestUnsortedSubArray();
-        //    //susa.FindUnsortedSubarrayBrueforceWithSorting();
-        //    //susa.FindUnsortedSubarrayWithoutSortingIncorrectThoughtProcess();
-        //    //susa.FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess();
+            //ShortestUnsortedSubArray susa = new ShortestUnsortedSubArray();
+            //susa.FindUnsortedSubarrayBrueforceWithSorting();
+            //susa.FindUnsortedSubarrayWithoutSortingIncorrectThoughtProcess();
+            //susa.FindUnsortedSubarrayWithoutSortingCorrectThoughtProcess();
 
-        //    //MinimumSwapsToMakeSingleArraySorted mstmsas = new MinimumSwapsToMakeSingleArraySorted();
-        //    //mstmsas.CountMinimumSwaps();
+            //MinimumSwapsToMakeSingleArraySorted mstmsas = new MinimumSwapsToMakeSingleArraySorted();
+            //mstmsas.CountMinimumSwaps();
 
-        //    //MaximumSubArraySum msas = new MaximumSubArraySum();
-        //    //msas.CalculateMaximumSubArraySum();
+            //MaximumSubArraySum msas = new MaximumSubArraySum();
+            //msas.CalculateMaximumSubArraySum();
 
-        //    //MinimumDifference md = new MinimumDifference();
-        //    //md.PrintMinimumDifference();
+            //MinimumDifference md = new MinimumDifference();
+            //md.PrintMinimumDifference();
 
-        //    //ArrayProducts ap = new ArrayProducts();
-        //    //ap.ProductArray();
+            //ArrayProducts ap = new ArrayProducts();
+            //ap.ProductArray();
 
-        //    //BusyPerson bp = new BusyPerson();
-        //    //bp.CountActivities();
+            //BusyPerson bp = new BusyPerson();
+            //bp.CountActivities();
 
-        //    //MergeSortedArrays msa = new MergeSortedArrays();
-        //    //msa.MergeTwoSortedArrays();
+            //MergeSortedArrays msa = new MergeSortedArrays();
+            //msa.MergeTwoSortedArrays();
 
-        //    //MoveZerosToEnd mzte = new MoveZerosToEnd();
-        //    ////mzte.MovingZerosToEndMethodIncorrectMethod();
-        //    //mzte.MovingZerosToEndCorrectMethod();
+            //MoveZerosToEnd mzte = new MoveZerosToEnd();
+            ////mzte.MovingZerosToEndMethodIncorrectMethod();
+            //mzte.MovingZerosToEndCorrectMethod();
 
-        //    //RotateArray ra = new RotateArray();
-        //    //ra.RotateAnArrayByKstepsWithFormula();
+            //RotateArray ra = new RotateArray();
+            //ra.RotateAnArrayByKstepsWithFormula();
 
-        //    //CheckIfSortedRotatedArray cisra = new CheckIfSortedRotatedArray();
-        //    //cisra.CheckIfAnArrayIsSortedAndRotated();
+            //CheckIfSortedRotatedArray cisra = new CheckIfSortedRotatedArray();
+            //cisra.CheckIfAnArrayIsSortedAndRotated();
 
-        //    //SumOfTwoArrays sota = new SumOfTwoArrays();
-        //    //sota.FindArraySum();
-        //}
+            //SumOfTwoArrays sota = new SumOfTwoArrays();
+            //sota.FindArraySum();
+
+            //SpiralPrint sp = new SpiralPrint();
+            //sp.PrintSpiral();
+        }
     }
 }
