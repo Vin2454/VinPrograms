@@ -6,6 +6,7 @@ namespace VinPrograms.Arrays
 {
     public class SpellNumber
     {
+        string[] str = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine" };
         public void SpellANumberUsingRecursion()
         {
             int n = 435;
@@ -22,7 +23,8 @@ namespace VinPrograms.Arrays
             n = n / 10;
 
             SpellRec(n);
-            Console.Write(Spell(rem) + " ");
+            //Console.Write(Spell(rem) + " "); //using switch-case function
+            Console.Write(str[rem] + " "); //using string array
         }
 
         private string Spell(int n)
