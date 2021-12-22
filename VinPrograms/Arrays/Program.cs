@@ -74,6 +74,10 @@ namespace VinPrograms.Arrays
 
             //SpellNumber sn = new SpellNumber();
             //sn.SpellANumberUsingRecursion();
+
+            //Exponent e = new Exponent();
+            ////e.PrintExponentUsingRecursion();
+            //e.PrintExponentUsingFastExponentiationRecursion();
         }
     }
 }
