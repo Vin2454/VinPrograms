@@ -13,10 +13,10 @@ namespace VinPrograms.SlidingWindow
     /// </summary>
     public class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    SubArraySumRanges sasr = new SubArraySumRanges();
-        //    sasr.SubArraySumForAGivenTarget_PrintAllTheRanges();
-        //}
+        static void Main(string[] args)
+        {
+            SubArraySumRanges sasr = new SubArraySumRanges();
+            sasr.SubArraySumForAGivenTarget_PrintAllTheRanges();
+        }
     }
 }

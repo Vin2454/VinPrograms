@@ -88,6 +88,7 @@ namespace VinPrograms.Arrays
 
             return;
         }
+        
         /// <summary>
         /// This is my thinking
         /// </summary>
