@@ -86,8 +86,8 @@ namespace VinPrograms.Arrays
         //    //cs.CountWaysToClimbStairs_With_1Or2Or3Steps();
 
         //    //GenerateSubArray gsa = new GenerateSubArray();
-        //    //gsa.PrintSubArrayBruteForce();
-        //    ////gsa.PrintSubArrayWithRecursion();
+        //    ////gsa.PrintSubArrayBruteForce();
+        //    //gsa.PrintSubArrayWithRecursion();
         //}
     }
 }

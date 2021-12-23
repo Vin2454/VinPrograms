@@ -35,9 +35,18 @@ namespace VinPrograms.Arrays
         public void PrintSubArrayWithRecursion()
         {
             int[] arr = { 1, 2, 3 };
-            PrintSubArrayRec(arr, 0, 0);
+            PrintSubArrayRec2(arr, 0, 0);
         }
 
+        /// <summary>
+        ////Approach: We use two pointers start and end to maintain the starting and ending point of the array and follow the steps given below:
+        ////Stop if we have reached the end of the array
+        ////Increment the end index if start has become greater than end
+        ////Print the subarray from index start to end and increment the starting index
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
         private void PrintSubArrayRec(int[] arr, int start, int end)
         {
             if (end == arr.Length)
@@ -46,15 +55,70 @@ namespace VinPrograms.Arrays
                 PrintSubArrayRec(arr, 0, end + 1);
             else
             {
-                Console.Write("[");
-                for (int i = start; i < end; i++)
+                // To get below output
+                //1,
+                //1, 2,
+                //2,
+                //1, 2, 3,
+                //2, 3,
+                //3,
+                for (int i = start; i <= end; i++) //Here i <= end
                 {
                     Console.Write(arr[i] + ", ");
                 }
+                Console.WriteLine();
 
-                Console.WriteLine(arr[end] + "]");
+                //// To get below output
+                ////[1]                ////[1, 2]
+                ////[2]
+                ////[1, 2, 3]
+                ////[2, 3]
+                ////[3]
+
+                //Console.Write("[");
+                //for (int i = start; i < end; i++) // Here i < end only
+                //{
+                //    Console.Write(arr[i] + ", ");
+                //}
+                //Console.WriteLine(arr[end] + "]");
+
+
                 PrintSubArrayRec(arr, start + 1, end);
             }
+
+            return;
+        }
+        /// <summary>
+        /// This is my thinking
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        private void PrintSubArrayRec2(int[] arr, int start, int end)
+        {
+            // To print below output. My thinking.
+            //1,
+            //1, 2,
+            //1, 2, 3,
+            //2,
+            //2, 3,
+            //3,
+
+            if (start == arr.Length)
+                return;
+            else if (end == arr.Length)
+            {
+                PrintSubArrayRec2(arr, start + 1, start + 1);
+                return; // Here return is important
+            }
+
+            for (int i = start; i <= end; i++)
+            {
+                Console.Write(arr[i] + ", ");
+            }
+            Console.WriteLine();
+
+            PrintSubArrayRec2(arr, start, end + 1);
 
             return;
         }
