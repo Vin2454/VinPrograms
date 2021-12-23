@@ -4,6 +4,9 @@ using System.Text;
 
 namespace VinPrograms.Strings
 {
+    /// <summary>
+    /// This is also called PowerSet
+    /// </summary>
     public class Subsequence
     {
         /// <summary>
