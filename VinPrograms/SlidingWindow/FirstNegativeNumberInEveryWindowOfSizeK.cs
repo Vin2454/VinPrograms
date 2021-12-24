@@ -48,6 +48,8 @@ namespace VinPrograms.SlidingWindow
         {
             int[] arr = { 12, -1, -7, 8, -15, 30, 16, 28 };
             int k = 3;
+            //int[] arr = { -8, 2, 3, -6, 10 };
+            //int k = 2;
 
             int start = 0;
             int end = 0;
