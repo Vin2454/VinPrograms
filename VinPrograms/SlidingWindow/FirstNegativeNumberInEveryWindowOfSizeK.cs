@@ -40,7 +40,7 @@ namespace VinPrograms.SlidingWindow
         }
 
         /// <summary>
-        /// Time Complexity: O(n), Space Complexity: O(n)
+        /// Time Complexity: O(n), Space Complexity: O(k)
         /// Video Explanation: https://www.youtube.com/watch?v=uUXXEgK2Jh8&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=4
         /// Solution with Space Complexity O(1) is available @ https://www.geeksforgeeks.org/first-negative-integer-every-window-size-k/
         /// </summary>
@@ -76,7 +76,7 @@ namespace VinPrograms.SlidingWindow
                         Console.WriteLine($"First negative number in the window from {arr[start]} to {arr[start + k - 1]} is {firstNegativeNumber}");
                         // It's important that the above statement should be first before we increment start & end
 
-                        if (arr[start] == firstNegativeNumber)
+                        if (arr[start] == firstNegativeNumber) // This is very important checck, otherwise same -ve number cannot get into multiple windows
                             negativeNumbers.RemoveAt(0);
                     }
                     else
