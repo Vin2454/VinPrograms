@@ -83,7 +83,6 @@ namespace VinPrograms.SlidingWindow
                     // print the window
                     Console.WriteLine($"index range:{i}-{j - 1}");// j-1 since we have incremented j above and it will go to next position
             }
-
         }
     }
 }
