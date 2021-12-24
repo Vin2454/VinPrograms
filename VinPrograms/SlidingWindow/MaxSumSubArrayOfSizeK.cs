@@ -14,20 +14,20 @@ namespace VinPrograms.SlidingWindow
             int[] arr = { 5, -3, 3, 2 };
             int k = 2;//subArray size
 
-            int i = 0;
+            int start = 0;
             int maxSum = int.MinValue;
-            while (i < arr.Length - k + 1)
+            while (start < arr.Length - k + 1)
             {
-                int j = i;
+                int end = start;
                 int currentSubArraySum = 0;
-                while (j < i + k) // since subArray size is k
+                while (end < start + k) // since subArray size is k
                 {
-                    currentSubArraySum += arr[j];
-                    j++;
+                    currentSubArraySum += arr[end];
+                    end++;
                 }
                 maxSum = Math.Max(maxSum, currentSubArraySum);
 
-                i++;
+                start++;
             }
             Console.WriteLine($"Maximum sum of subarray of size {k} is {maxSum}");
         }
@@ -52,14 +52,15 @@ namespace VinPrograms.SlidingWindow
             int maxSum = int.MinValue;
             int currentSubArraySum = 0;
 
-            while (end<arr.Length)
+            while (end < arr.Length)
             {
-                currentSubArraySum += arr[end];
                 int windowSize = end - start + 1;
 
-                if (windowSize < k) //  till windowSize reached for the first time
+                currentSubArraySum += arr[end];
+
+                if (windowSize < k) //  till windowSize reached for the first time. This will be common in almost all sliding window problems.
                     end++;
-                if(windowSize==k)
+                else if (windowSize == k) //reached windowSize
                 {
                     maxSum = Math.Max(maxSum, currentSubArraySum);
 

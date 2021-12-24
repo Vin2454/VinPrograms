@@ -20,6 +20,10 @@ namespace VinPrograms.SlidingWindow
             ////mssaosk.FindMaxSumSubArrayOfSizeK_BruteForce();
             //mssaosk.FindMaxSumSubArrayOfSizeK_WithSlidingWindow();
 
+            //FirstNegativeNumberInEveryWindowOfSizeK fniewsk = new FirstNegativeNumberInEveryWindowOfSizeK();
+            ////fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_BruteForce();
+            //fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_SlidingWindow();
+
             //SubArraySumRanges sasr = new SubArraySumRanges();
             ////sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithRecursion();
             //sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithSlidingWindow();
