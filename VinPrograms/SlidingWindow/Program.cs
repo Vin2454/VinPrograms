@@ -24,9 +24,9 @@ namespace VinPrograms.SlidingWindow
         //    ////fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_BruteForce();
         //    //fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_SlidingWindow();
 
-        //    //CountOccurencesOfAnagrams cooa = new CountOccurencesOfAnagrams();
-        //    ////cooa.CountTheOccurencesOfAnagrams_BruteForce();
-        //    //cooa.CountTheOccurencesOfAnagrams_WithSlidingWindow();
+        //    CountOccurencesOfAnagrams cooa = new CountOccurencesOfAnagrams();
+        //    //cooa.CountTheOccurencesOfAnagrams_BruteForce();
+        //    cooa.CountTheOccurencesOfAnagrams_WithSlidingWindow();
 
         //    //SubArraySumRanges sasr = new SubArraySumRanges();
         //    ////sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithRecursion();

@@ -125,7 +125,7 @@ namespace VinPrograms.SlidingWindow
                 {
                     charCounts[input[end]]--;
 
-                    if (charCounts[input[end]] == 0)
+                    if (charCounts[input[end]] == 0) 
                         count--;
                 }
 
@@ -144,7 +144,7 @@ namespace VinPrograms.SlidingWindow
 
                     if (charCounts.ContainsKey(input[start]))
                     {
-                        if (charCounts[input[start]] == 1)
+                        if (charCounts[input[start]] == 1) // >0 will also work.
                             count++;
                     }
 
