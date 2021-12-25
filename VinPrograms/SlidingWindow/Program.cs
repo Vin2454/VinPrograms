@@ -14,23 +14,27 @@ namespace VinPrograms.SlidingWindow
     /// </summary>
     public class Program
     {
-        static void Main(string[] args)
-        {
-            //MaxSumSubArrayOfSizeK mssaosk = new MaxSumSubArrayOfSizeK();
-            ////mssaosk.FindMaxSumSubArrayOfSizeK_BruteForce();
-            //mssaosk.FindMaxSumSubArrayOfSizeK_WithSlidingWindow();
+        //static void Main(string[] args)
+        //{
+        //    //MaxSumSubArrayOfSizeK mssaosk = new MaxSumSubArrayOfSizeK();
+        //    ////mssaosk.FindMaxSumSubArrayOfSizeK_BruteForce();
+        //    //mssaosk.FindMaxSumSubArrayOfSizeK_WithSlidingWindow();
 
-            //FirstNegativeNumberInEveryWindowOfSizeK fniewsk = new FirstNegativeNumberInEveryWindowOfSizeK();
-            ////fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_BruteForce();
-            //fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_SlidingWindow();
+        //    //FirstNegativeNumberInEveryWindowOfSizeK fniewsk = new FirstNegativeNumberInEveryWindowOfSizeK();
+        //    ////fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_BruteForce();
+        //    //fniewsk.PrintFirstNegativeNumberInEveryWindowOfSizeK_SlidingWindow();
 
-            //SubArraySumRanges sasr = new SubArraySumRanges();
-            ////sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithRecursion();
-            //sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithSlidingWindow();
+        //    CountOccurencesOfAnagrams cooa = new CountOccurencesOfAnagrams();
+        //    cooa.CountTheOccurencesOfAnagrams_BruteForce();
+        //    //cooa.CountTheOccurencesOfAnagrams_WithSlidingWindow();
 
-            //LargestUniqueSubstringInAStringBadWay lusis = new LargestUniqueSubstringInAStringBadWay();
-            //lusis.PrintLargestUniqueSubstringInAString_BruteForce();
-            ////lusis.PrintLargestUniqueSubstringInAString_SlidingWindow();
-        }
+        //    //SubArraySumRanges sasr = new SubArraySumRanges();
+        //    ////sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithRecursion();
+        //    //sasr.SubArraySumForAGivenTarget_PrintAllTheRanges_WithSlidingWindow();
+
+        //    //LargestUniqueSubstringInAStringBadWay lusis = new LargestUniqueSubstringInAStringBadWay();
+        //    //lusis.PrintLargestUniqueSubstringInAString_BruteForce();
+        //    ////lusis.PrintLargestUniqueSubstringInAString_SlidingWindow();
+        //}
     }
 }

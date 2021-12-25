@@ -20,6 +20,12 @@ namespace VinPrograms.Strings
         //    ////rs2.Space20_Notworking();
         //    //rs2.Space20_Working();
 
+        //    //StringAnagramsCheck sac = new StringAnagramsCheck();
+        //    ////sac.CheckStringAnagrams_WithSorting();
+        //    ////sac.CheckStringAnagrams_WithSorting_WithDictionary_Method1();
+        //    ////sac.CheckStringAnagrams_UsingTwoArrayCountCharacters();
+        //    //sac.CheckStringAnagrams_UsingOneArrayCountCharacters();
+
         //    //CheckSubset cs = new CheckSubset();
         //    //cs.IsSubset();
 
