@@ -64,6 +64,7 @@ namespace VinPrograms.SlidingWindow
                 {
                     maxSum = Math.Max(maxSum, currentSubArraySum);
 
+                    // handle start while sliding the window
                     currentSubArraySum -= arr[start]; //it's important to remove pre-element first before incrementing the start
 
                     start++;

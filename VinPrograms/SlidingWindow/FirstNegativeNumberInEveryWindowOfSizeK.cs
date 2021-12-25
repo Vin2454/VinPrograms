@@ -76,6 +76,7 @@ namespace VinPrograms.SlidingWindow
                         Console.WriteLine($"First negative number in the window from {arr[start]} to {arr[start + k - 1]} is {firstNegativeNumber}");
                         // It's important that the above statement should be first before we increment start & end
 
+                        // handle start while sliding the window
                         if (arr[start] == firstNegativeNumber) // This is very important checck, otherwise same -ve number cannot get into multiple windows
                             negativeNumbers.RemoveAt(0);
                     }
