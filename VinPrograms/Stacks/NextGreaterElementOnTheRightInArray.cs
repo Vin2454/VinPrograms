@@ -77,12 +77,14 @@ namespace VinPrograms.Stacks
 
         /// <summary>
         /// https://www.geeksforgeeks.org/next-greater-element-in-same-order-as-input/
+        /// Start from the right side, push element into stack and see if it is greater than previous element
+        /// Idea is to keep greater elements in the Stack (greatest being on the top)
         /// </summary>
         public void PrintNextGreaterElementOnTheRightInArray_BetterSolution()
         {
-            int[] arr = { 3, 2, 1, 4, 5 }; // good example to understand
+            //int[] arr = { 3, 2, 1, 4, 5 }; // good example to understand
 
-            //int[] arr = { 11, 13, 21, 3 };
+            int[] arr = { 11, 13, 21, 3 };
 
             int n = arr.Length;
 
@@ -93,19 +95,23 @@ namespace VinPrograms.Stacks
             // iterating from n-1 to 0
             for (int i = n - 1; i >= 0; i--)
             {
-                /*We will pop till we get the
-                greater element on top or stack gets empty*/
+                // It's important to have this condition before next conditions, otherwise, will get incorrect answer
+                /*Remove unnecessary elements first.We will pop till we get the
+              greater element on top or stack gets empty*/
                 while (s.Count != 0 && s.Peek() <= arr[i])
-                    s.Pop();
+                    s.Pop(); // these are of no use
 
-                /*if stack gots empty means there
-                is no element on right which is greater
-                than the current element.
-                if not empty then the next greater
-                element is on top of stack*/
+                /*if stack gets empty means there
+               is no element on right which is greater
+               than the current element.
+               if not empty then the next greater
+               element is on top of stack*/
                 if (s.Count == 0)
                     arr1[i] = -1;
-                else
+                //Console.WriteLine(arr[i] + " ---> " + "-1");
+
+                if(s.Count != 0 && s.Peek() > arr[i])
+                    //Console.WriteLine(arr[i] + " ---> " + s.Peek());
                     arr1[i] = s.Peek();
 
                 s.Push(arr[i]);
