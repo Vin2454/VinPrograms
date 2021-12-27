@@ -40,59 +40,60 @@ namespace VinPrograms.SlidingWindow
             }
         }
 
-        /// <summary>
-        /// Time Complexity: O(n)
-        /// Aditya Verma Video: https://www.youtube.com/watch?v=xFJXtB5vSmM&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=6
-        /// </summary>
-        public void MaxOfAllSubArraysOfSizeK_WithSlidingWindow()
-        {
-            //int[] arr = { 1, 3, -1, -3, 5, 3, 6, 7 };
-            //int k = 3;
-            ////// expected output: 3, 3, 5, 5, 6, 7
+        ///// <summary>
+        ///// THIS IS INCORRECT SOLUTION. NEED TO REVISIT IT
+        ///// Time Complexity: O(n)
+        ///// Aditya Verma Video: https://www.youtube.com/watch?v=xFJXtB5vSmM&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=6
+        ///// </summary>
+        //public void MaxOfAllSubArraysOfSizeK_WithSlidingWindow()
+        //{
+        //    //int[] arr = { 1, 3, -1, -3, 5, 3, 6, 7 };
+        //    //int k = 3;
+        //    ////// expected output: 3, 3, 5, 5, 6, 7
 
-            //// below test case fails
-            //int[] arr = { 2,1 };
-            //int k = 1;
+        //    //// below test case fails
+        //    //int[] arr = { 2,1 };
+        //    //int k = 1;
             
-            // below test case fails
-            int[] arr = { 6, 3, 4, 1, 1, 2, 5, 6 };
-            int k = 3;
+        //    // below test case fails
+        //    int[] arr = { 6, 3, 4, 1, 1, 2, 5, 6 };
+        //    int k = 3;
 
-            if (k > arr.Length)
-            {
-                Console.WriteLine("we can return maximum in the given array");
-                return;
-            }
+        //    if (k > arr.Length)
+        //    {
+        //        Console.WriteLine("we can return maximum in the given array");
+        //        return;
+        //    }
 
-            //int start = 0;
+        //    //int start = 0;
 
-            int start = 0;
-            int end = 0;
-            List<int> maxElements = new List<int>();
-            int maxElementInCurrentWindow = int.MinValue;
+        //    int start = 0;
+        //    int end = 0;
+        //    List<int> maxElements = new List<int>();
+        //    int maxElementInCurrentWindow = int.MinValue;
 
-            int maximumInSubArray = int.MinValue;
+        //    int maximumInSubArray = int.MinValue;
 
-            while (end<arr.Length)
-            {
-                int windowSize = end - start + 1;
-                // Calculations
-                maximumInSubArray = Math.Max(maximumInSubArray, arr[end]);
+        //    while (end<arr.Length)
+        //    {
+        //        int windowSize = end - start + 1;
+        //        // Calculations
+        //        maximumInSubArray = Math.Max(maximumInSubArray, arr[end]);
 
-                if (windowSize < k)
-                    end++;
+        //        if (windowSize < k)
+        //            end++;
 
-                if(windowSize==k)
-                {
-                    // get the answer <- calculation
-                    Console.WriteLine($"Maximum value in current SubArray is { maximumInSubArray}");
+        //        if(windowSize==k)
+        //        {
+        //            // get the answer <- calculation
+        //            Console.WriteLine($"Maximum value in current SubArray is { maximumInSubArray}");
 
-                    // slide the window and remove start element
-                    start++;
-                    end++;
-                }
-            }
+        //            // slide the window and remove start element
+        //            start++;
+        //            end++;
+        //        }
+        //    }
             
-        }
+        //}
     }
 }
