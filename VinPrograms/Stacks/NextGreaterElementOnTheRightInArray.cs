@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VinPrograms.Arrays
+namespace VinPrograms.Stacks
 {
     public class NextGreaterElementOnTheRightInArray
     {
@@ -80,9 +80,9 @@ namespace VinPrograms.Arrays
         /// </summary>
         public void PrintNextGreaterElementOnTheRightInArray_BetterSolution()
         {
-            //int[] arr = { 3, 2, 1, 4, 5 }; // good example to understand
+            int[] arr = { 3, 2, 1, 4, 5 }; // good example to understand
 
-            int[] arr = { 11, 13, 21, 3 };
+            //int[] arr = { 11, 13, 21, 3 };
 
             int n = arr.Length;
 

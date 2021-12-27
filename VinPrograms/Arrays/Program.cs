@@ -88,10 +88,6 @@ namespace VinPrograms.Arrays
         //    //GenerateSubArray gsa = new GenerateSubArray();
         //    ////gsa.PrintSubArrayBruteForce();
         //    //gsa.PrintSubArrayWithRecursion();
-
-        //    //NextGreaterElementOnTheRightInArray ngeor = new NextGreaterElementOnTheRightInArray();
-        //    ////ngeor.PrintNextGreaterElementOnTheRightInArray_Solution1();
-        //    //ngeor.PrintNextGreaterElementOnTheRightInArray_BetterSolution();
         //}
     }
 }
