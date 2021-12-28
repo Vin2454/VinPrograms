@@ -42,6 +42,9 @@ namespace VinPrograms.SlidingWindow
 
         //    //LargestSubArrayOfSumK lsaosk = new LargestSubArrayOfSumK();
         //    //lsaosk.LargestSubArrayOfSumK_WithSlidingWindow_OnlyForPositiveIntegers();
+
+        //    //LongestSubstringWithKUniqueCharacters lswkuc = new LongestSubstringWithKUniqueCharacters();
+        //    //lswkuc.LongestSubstringWithKUniqueCharacters_WithSlidingWindow();
         //}
     }
 }
