@@ -11,6 +11,12 @@ namespace VinPrograms.Matrix
         //    //LowerAndUpperMatrixSums laums = new LowerAndUpperMatrixSums();
         //    //laums.PrintLowerAndUpperMatrixSums();
 
+        //    //TransposeOfMatrix mt = new TransposeOfMatrix();
+        //    //mt.MatrixTranspose_SquareMatrix_ResultInNewArray();
+        //    ////mt.MatrixTranspose_RectangularMatrix_ResultInNewArray();
+        //    ////mt.MatrixTranspose_SquareMatrix_Inplace();
+        //    ////mt.MatrixTranspose_RectangularMatrix_Inplace(); // IT'S HARDEST PROBLEM. IGNORE IT.
+
         //    //SpiralPrint sp = new SpiralPrint();
         //    //sp.PrintSpiral();
 
