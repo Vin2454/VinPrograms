@@ -8,6 +8,9 @@ namespace VinPrograms.Matrix
     {
         //static void Main(string[] args)
         //{
+        //    //LowerAndUpperMatrixSums laums = new LowerAndUpperMatrixSums();
+        //    //laums.PrintLowerAndUpperMatrixSums();
+
         //    //SpiralPrint sp = new SpiralPrint();
         //    //sp.PrintSpiral();
 
