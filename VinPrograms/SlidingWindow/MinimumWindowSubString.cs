@@ -9,19 +9,94 @@ namespace VinPrograms.SlidingWindow
     /// </summary>
     public class MinimumWindowSubString
     {
-        public void MinimumWindowSubString_SlidingWindow_ExpandContract()
+        /// <summary>
+        /// https://www.youtube.com/watch?v=iwv1llyN6mo&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=13
+        /// </summary>
+        public void MinimumWindowSubString_SlidingWindow_AdityaVermaWay()
         {
+            string input = "timetopractice";
+            string pattern = "toc";
+            //// Expected toprac
+
             //string input = "HELLO";
             //string pattern = "EO";
             //// Expected ELLO
 
-            string input = "ADOBECODEBANC";
-            string pattern = "ABC";
-            //Expected output: BANC
-            //Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string pattern
+            //string input = "ADOBECODEBANC";
+            //string pattern = "ABC";
+            ////Expected output: BANC
+            ////Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string pattern
+
+            Dictionary<char, int> neededCharacters = new Dictionary<char, int>();
+
+            for (int i = 0; i < pattern.Length; i++)
+            {
+                if (!neededCharacters.ContainsKey(pattern[i]))
+                    neededCharacters.Add(pattern[i], 1);
+                else
+                    neededCharacters[pattern[i]]++;
+            }
+            int neededCharactersCount = neededCharacters.Count;
+
+            int start = 0;
+            int end = 0;
+
+            int minStart = 0;
+            int minEnd = 0;
+            int minLen = int.MaxValue;
+
+            while (end < input.Length)
+            {
+                if(neededCharacters.ContainsKey(input[end]))
+                {
+                    neededCharacters[input[end]]--;
+                    if(neededCharacters[input[end]]==0)
+                    {
+                        neededCharactersCount--;
+                    }
+                }
+
+                while (neededCharactersCount == 0)//// as soon as all the required characters found , then "start" pointer needs to be moved to right. 
+                {
+                    if (end - start + 1 < minLen)
+                    {
+                        minLen = end - start + 1;
+                        minStart = start;
+                        minEnd = end + 1;
+                    }
+
+                    if (neededCharacters.ContainsKey(input[start]))
+                    {
+                        neededCharacters[input[start]]++;
+
+                        if (neededCharacters[input[start]] > 0)
+                        {
+                            neededCharactersCount++;
+                        }
+                    }
+                    start++;
+                }
+                end++;
+            }
+            Console.WriteLine($"{input.Substring(minStart, minEnd-minStart)}");
+        }
+
+        public void MinimumWindowSubString_SlidingWindow_ExpandContract_PrateekNarangWay()
+        {
+            string input = "timetopractice";
+            string pattern = "toc";
+
+            //string input = "HELLO";
+            //string pattern = "EO";
+            //// Expected ELLO
+
+            //string input = "ADOBECODEBANC";
+            //string pattern = "ABC";
+            ////Expected output: BANC
+            ////Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string pattern
 
             // here we are using array has patternFrequency map. We can also use Dictionary
-           int[] patternFrequency = new int[256];
+            int[] patternFrequency = new int[256];
             int[] inputFrequencyWindow = new int[256];
 
             for (int i = 0; i < pattern.Length; i++)
