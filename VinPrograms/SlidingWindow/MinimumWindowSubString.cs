@@ -14,16 +14,16 @@ namespace VinPrograms.SlidingWindow
         /// </summary>
         public void MinimumWindowSubString_SlidingWindow_AdityaVermaWay()
         {
-            string input = "timetopractice";
-            string pattern = "toc";
-            //// Expected toprac
+            //string input = "timetopractice";
+            //string pattern = "toc";
+            ////// Expected toprac
 
             //string input = "HELLO";
             //string pattern = "EO";
             //// Expected ELLO
 
-            //string input = "ADOBECODEBANC";
-            //string pattern = "ABC";
+            string input = "ADOBECODEBANC";
+            string pattern = "ABC";
             ////Expected output: BANC
             ////Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string pattern
 
@@ -47,16 +47,18 @@ namespace VinPrograms.SlidingWindow
 
             while (end < input.Length)
             {
-                if(neededCharacters.ContainsKey(input[end]))
+                if (neededCharacters.ContainsKey(input[end]))
                 {
                     neededCharacters[input[end]]--;
-                    if(neededCharacters[input[end]]==0)
+                    if (neededCharacters[input[end]] == 0)
                     {
                         neededCharactersCount--;
                     }
                 }
 
-                while (neededCharactersCount == 0)//// as soon as all the required characters found , then "start" pointer needs to be moved to right. 
+                // as soon as all the required characters found , then "start" pointer needs to be moved to right. 
+                // we can have multiple answers and hence while loop for the answer condition
+                while (neededCharactersCount <= 0)
                 {
                     if (end - start + 1 < minLen)
                     {
@@ -78,7 +80,7 @@ namespace VinPrograms.SlidingWindow
                 }
                 end++;
             }
-            Console.WriteLine($"{input.Substring(minStart, minEnd-minStart)}");
+            Console.WriteLine($"{input.Substring(minStart, minEnd - minStart)}");
         }
 
         public void MinimumWindowSubString_SlidingWindow_ExpandContract_PrateekNarangWay()
