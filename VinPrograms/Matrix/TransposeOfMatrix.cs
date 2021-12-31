@@ -134,9 +134,56 @@ namespace VinPrograms.Matrix
         }
 
         /// <summary>
+        /// https://www.youtube.com/watch?v=dVH7J8Mqv9A
+        /// </summary>
+        public void MatrixTranspose_SquareMatrix_Inplace_Method1()
+        {
+            int[][] input = {
+                new int[]{ 1, 1, 1, 1},
+                new int[]{ 2, 2, 2, 2},
+                new int[]{ 3, 3, 3, 3},
+                new int[]{ 4, 4, 4, 4}
+            };
+
+            ////// expected output
+            //////{
+            //////    { 1, 2, 3, 4},  
+            //////    { 1, 2, 3, 4}
+            //////    { 1, 2, 3, 4}
+            //////    { 1, 2, 3, 4}
+            //////}
+
+
+            int rows = input.Length;
+            int columns = input[0].Length;
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = i; j < columns; j++)
+                {
+                    if (i < j)
+                    {
+                        int temp = input[i][j];
+                        input[i][j] = input[j][i];
+                        input[j][i] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("Modified matrix is ");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                    Console.Write(input[i][j] + " ");
+
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
         /// For each i'th iteration, i'th row and i'th column will be fixed
         /// </summary>
-        public void MatrixTranspose_SquareMatrix_Inplace()
+        public void MatrixTranspose_SquareMatrix_Inplace_BetterMethod()
         {
             int[][] input = {
                 new int[]{ 1, 1, 1, 1},
@@ -176,6 +223,8 @@ namespace VinPrograms.Matrix
                 Console.WriteLine();
             }
         }
+
+        
 
         /// <summary>
         /// It's Hard. https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.1017&rep=rep1&type=pdf

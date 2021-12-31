@@ -24,6 +24,8 @@ namespace VinPrograms.Matrix
                 new int[]{4,5,6 },
                 new int[]{7,8,9 }
             };
+
+            // 1) Transpose matrix 2) Reverse each row
         }
     }
 }
