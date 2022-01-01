@@ -18,11 +18,14 @@ namespace VinPrograms.Matrix
             ////mt.MatrixTranspose_SquareMatrix_Inplace_BetterMethod();
             ////mt.MatrixTranspose_RectangularMatrix_Inplace(); // IT'S HARDEST PROBLEM. IGNORE IT.
 
-            //SpiralPrint sp = new SpiralPrint();
-            //sp.PrintSpiral();
+            //ReverseEachRowIn2DMatrix reri2m = new ReverseEachRowIn2DMatrix();
+            //reri2m.ReverseEachRowInA2DMatrix();
 
             //RotateMatrixBy90Degrees rmb9 = new RotateMatrixBy90Degrees();
-            //rmb9.RotateMatrixBy90();
+            //rmb9.RotateMatrixBy90ClockWise();
+
+            //SpiralPrint sp = new SpiralPrint();
+            //sp.PrintSpiral();
 
             //SearchInA2DMatrix si2m = new SearchInA2DMatrix();
             ////si2m.SearchIn2DMatrixWithBinarySearch();
