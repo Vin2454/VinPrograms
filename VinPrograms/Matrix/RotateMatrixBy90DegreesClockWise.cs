@@ -4,6 +4,7 @@ using System.Text;
 
 namespace VinPrograms.Matrix
 {
+    // check: https://www.youtube.com/watch?v=Y72QeX0Efxw
     public class RotateMatrixBy90DegreesClockWise
     {
         // 1) Transpose matrix 2) Reverse each row
