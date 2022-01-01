@@ -4,11 +4,11 @@ using System.Text;
 
 namespace VinPrograms.Matrix
 {
-    public class RotateMatrixBy90Degrees
+    public class RotateMatrixBy90DegreesAntiClockWise
     {
-        // 1) Transpose matrix 2) Reverse each row
+        // 1) Transpose matrix 2) Reverse each column
         // This works only for SquareMatrix since the used transpose works only for square matrix
-        public void RotateMatrixBy90ClockWise()
+        public void RotateMatrixBy90AntiClockWise()
         {
             //e.g: rotate below
             // 1 2 3
@@ -16,9 +16,9 @@ namespace VinPrograms.Matrix
             // 7 8 9
 
             // to
-            // 7 4 1
-            // 8 5 2
-            // 9 6 3
+            // 3 6 9
+            // 2 5 8
+            // 1 4 7
 
             int[][] input =
             {
@@ -41,17 +41,17 @@ namespace VinPrograms.Matrix
                 }
             }
 
-            // reverse each row
-            for (int i = 0; i < rows; i++)
+            // reverse each column
+            for (int i = 0; i < columns; i++)
             {
                 int start = 0;
-                int end = columns - 1;
+                int end = rows - 1;
                 while (start < end)
                 {
                     //swap the elements
-                    int temp = input[i][start];
-                    input[i][start] = input[i][end];
-                    input[i][end] = temp;
+                    int temp = input[start][i];
+                    input[start][i] = input[end][i];
+                    input[end][i] = temp;
 
                     start++;
                     end--;
