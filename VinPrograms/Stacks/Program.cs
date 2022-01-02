@@ -7,11 +7,14 @@ namespace VinPrograms.Stacks
         static void Main(string[] args)
         {
             //NearestGreaterElementOnTheRightInArray ngeor = new NearestGreaterElementOnTheRightInArray();
-            //////ngeor.PrintNextGreaterElementOnTheRightInArray_Solution1();
+            ////ngeor.PrintNextGreaterElementOnTheRightInArray_Solution1();
             //ngeor.PrintNextGreaterElementOnTheRightInArray_BetterSolution();
 
             //NearestGreaterElementOnTheLeftInArray ngeol = new NearestGreaterElementOnTheLeftInArray();
             //ngeol.PrintNextGreaterElementOnTheLeftInArray_BetterSolution();
+
+            //NearestSmallerElementOnTheLeftInArray nseol = new NearestSmallerElementOnTheLeftInArray();
+            //nseol.PrintNextSmallerElementOnTheLeftInArray_BetterSolution();
         }
     }
 }

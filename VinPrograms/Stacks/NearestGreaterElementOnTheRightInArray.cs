@@ -86,7 +86,10 @@ namespace VinPrograms.Stacks
         {
             //int[] arr = { 3, 2, 1, 4, 5 }; // good example to understand
 
-            int[] arr = { 11, 13, 21, 3 };
+            //int[] arr = { 11, 13, 21, 3 };
+
+            int[] arr = { 1, 3, 2, 4 };
+            // expect: 3,4,4,-1
 
             int n = arr.Length;
 
