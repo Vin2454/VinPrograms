@@ -15,6 +15,9 @@ namespace VinPrograms.Stacks
 
             //NearestSmallerElementOnTheLeftInArray nseol = new NearestSmallerElementOnTheLeftInArray();
             //nseol.PrintNextSmallerElementOnTheLeftInArray_BetterSolution();
+
+            //NearestSmallerElementOnTheRightInArray nseor = new NearestSmallerElementOnTheRightInArray();
+            //nseor.PrintNextSmallerElementOnTheRightInArray_BetterSolution();
         }
     }
 }
