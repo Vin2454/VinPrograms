@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VinPrograms.Stacks
 {
-    public class NextGreaterElementOnTheRightInArray
+    public class NearestGreaterElementOnTheRightInArray
     {
         /// <summary>
         /// Time Complexity: O(n), using Stack

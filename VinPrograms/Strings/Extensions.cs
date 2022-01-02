@@ -41,5 +41,17 @@ namespace VinPrograms.Strings
                 Console.WriteLine(occurenceIndex);
             }
         }
+
+        ///Here is the use of in-place swap without any temp variable  
+        public static string ReverseString3(string str)
+        {
+            char[] chars = str.ToCharArray();
+            for (int i = 0, j = str.Length - 1; i < j; i++, j--)
+            {
+                chars[i] = str[j];
+                chars[j] = str[i];
+            }
+            return new string(chars);
+        }
     }
 }
