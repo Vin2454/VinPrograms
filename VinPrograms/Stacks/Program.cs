@@ -6,9 +6,9 @@ namespace VinPrograms.Stacks
     {
         static void Main(string[] args)
         {
-            //NextGreaterElementOnTheRightInArray ngeor = new NextGreaterElementOnTheRightInArray();
+            NextGreaterElementOnTheRightInArray ngeor = new NextGreaterElementOnTheRightInArray();
             ////ngeor.PrintNextGreaterElementOnTheRightInArray_Solution1();
-            //ngeor.PrintNextGreaterElementOnTheRightInArray_BetterSolution();
+            ngeor.PrintNextGreaterElementOnTheRightInArray_BetterSolution();
         }
     }
 }

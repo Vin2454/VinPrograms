@@ -8,7 +8,8 @@ namespace VinPrograms.Stacks
     {
         /// <summary>
         /// Time Complexity: O(n), using Stack
-        /// We push elements to stack for which we will try to find next greater element
+        /// Pushing elements to the Stack from left to right
+        /// At a position 'i', all the lowest elements in the right are of no use to keep in the Stack.
         /// https://www.geeksforgeeks.org/next-greater-element/
         /// </summary>
         public void PrintNextGreaterElementOnTheRightInArray_Solution1()
@@ -39,13 +40,13 @@ namespace VinPrograms.Stacks
                     // pop an element from stack
                     element = s.pop();
 
-                    /* If next is less than element, then push the element back */
+                    /* If current(next) is less than element, then push the element back */
                     if (current < element)
                     {
                         s.push(element);
                     }
 
-                    /* If next is greater than the popped element, 
+                    /* If current(next) is greater than the popped element, 
                        then a) print the pair b) keep popping while elements are smaller and
                        stack is not empty */
                     while (current > element)
@@ -59,7 +60,7 @@ namespace VinPrograms.Stacks
                     }
                 }
 
-                /* push next to stack so that we can find next
+                /* push current(next) to stack so that we can find next
                    greater for it */
                 s.push(current);
             }
@@ -78,6 +79,7 @@ namespace VinPrograms.Stacks
         /// <summary>
         /// https://www.geeksforgeeks.org/next-greater-element-in-same-order-as-input/
         /// Start from the right side, push element into stack and see if it is greater than previous element
+        /// We push elements to stack for which we will try to find next greater element
         /// Idea is to keep greater elements in the Stack (greatest being on the top)
         /// </summary>
         public void PrintNextGreaterElementOnTheRightInArray_BetterSolution()
@@ -95,12 +97,6 @@ namespace VinPrograms.Stacks
             // iterating from n-1 to 0
             for (int i = n - 1; i >= 0; i--)
             {
-                // It's important to have this condition before next conditions, otherwise, will get incorrect answer
-                /*Remove unnecessary elements first.We will pop till we get the
-              greater element on top or stack gets empty*/
-                while (s.Count != 0 && s.Peek() <= arr[i])
-                    s.Pop(); // these are of no use
-
                 /*if stack gets empty means there
                is no element on right which is greater
                than the current element.
@@ -110,9 +106,28 @@ namespace VinPrograms.Stacks
                     arr1[i] = -1;
                 //Console.WriteLine(arr[i] + " ---> " + "-1");
 
-                if(s.Count != 0 && s.Peek() > arr[i])
+                else if (s.Count != 0 && arr[i] < s.Peek())
                     //Console.WriteLine(arr[i] + " ---> " + s.Peek());
-                    arr1[i] = s.Peek();
+                    arr1[i] = s.Peek(); // Here, if we use Pop, need to push the element into Stack again.
+
+                else if (s.Count != 0 && arr[i] >= s.Peek())
+                {
+                    // THIS IS NOT VALID NOW: It's important to have this condition before next conditions, otherwise, will get incorrect answer
+                    /*Remove unnecessary elements first.We will pop till we get the
+                  greater element on top or stack gets empty*/
+                    while (s.Count != 0 && arr[i] >= s.Peek())
+                        s.Pop(); // these are of no use
+
+                    // below conditions are very important
+                    if (s.Count == 0)
+                    {
+                        arr1[i] = -1;
+                    }
+                    else
+                    {
+                        arr1[i] = s.Peek();
+                    }
+                }
 
                 s.Push(arr[i]);
             }
@@ -122,6 +137,7 @@ namespace VinPrograms.Stacks
                                   arr1[i]);
         }
     }
+
    public class stack
     {
         public int top;

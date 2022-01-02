@@ -57,6 +57,13 @@ namespace VinPrograms.Matrix
                     start++;
                     end--;
                 }
+
+                ////for (int j = 0; j < rows/2; j++)
+                ////{
+                ////    int temp = input[i][j];
+                ////    input[i][j] = input[i][rows-1-j];
+                ////    input[i][rows - 1 - j] = temp;
+                ////}
             }
 
             Console.WriteLine("Modified matrix is ");
