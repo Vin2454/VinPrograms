@@ -33,5 +33,31 @@ namespace VinPrograms.Arrays
 
             return SortedOrNotRec(arr, i + 1);
         }
+
+        public void SortedOrNotUsingRecursion_OtherMethod()
+        {
+            int[] arr = { 20, 23, 23, 45, 78, 88 };
+            int n = arr.Length;
+            if (ArraySortedOrNot(arr, n) != 0)
+                Console.WriteLine("Yes");
+            else
+                Console.WriteLine("No");
+        }
+
+        static int ArraySortedOrNot(int[] arr, int n)
+        {
+            // Array has one or no element or the
+            // rest are already checked and approved.
+            if (n == 1 || n == 0)
+                return 1;
+
+            // Unsorted pair found (Equal values allowed)
+            if (arr[n - 2] > arr[n - 1])
+                return 0;
+
+            // Last pair was sorted
+            // Keep on checking
+            return ArraySortedOrNot(arr, n - 1);
+        }
     }
 }
