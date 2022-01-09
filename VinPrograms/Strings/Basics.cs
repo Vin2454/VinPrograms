@@ -29,8 +29,11 @@ namespace VinPrograms.Strings
             Console.WriteLine(inputRefined);
 
             // IndexOf(..) different overload methods
+            
             // Substring(int startIndex) ==> start to end
             // Substring(int startIndex,int length) ==> startIndex to specified length 
+            // If you want to remove a character or some characters from a string, you can use Substring function
+            
             // Contains
             // ToCharArray()
             // Trim() has multiple overload methods like char, charArray..
