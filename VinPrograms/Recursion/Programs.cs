@@ -6,19 +6,19 @@ namespace VinPrograms.Recursion
 {
     public class Programs
     {
-        static void Main(string[] args)
-        {
-            //ArraySum asm= new ArraySum();
-            //asm.GetArraySum();
+        //static void Main(string[] args)
+        //{
+        //    //ArraySum asm= new ArraySum();
+        //    //asm.GetArraySum();
 
-            //ReverseAString rs = new ReverseAString();
-            //rs.ReverseString();
+        //    //ReverseAString rs = new ReverseAString();
+        //    //rs.ReverseString();
 
-            //Stairs srs = new Stairs();
-            //srs.CountWays();
+        //    //Stairs srs = new Stairs();
+        //    //srs.CountWays();
 
-            LetterCombinationsOfAPhoneNumber lcpn = new LetterCombinationsOfAPhoneNumber();
-            lcpn.LetterCombinationsOfPhoneNumber();
-        }
+        //    LetterCombinationsOfAPhoneNumber lcpn = new LetterCombinationsOfAPhoneNumber();
+        //    lcpn.LetterCombinationsOfPhoneNumber();
+        //}
     }
 }
