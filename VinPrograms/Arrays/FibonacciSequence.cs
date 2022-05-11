@@ -171,5 +171,46 @@ namespace VinPrograms.Arrays
             }
             return a + b;
         }
+
+        public void FibonacciWithRecursionAndDPMyWay2()
+        {
+            while (true)
+            {
+                Console.Write($"Enter number: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+                int i = 1;
+                while (i <= n)
+                {
+                    // Since we defined calculatedFibonacciValues inside while loop, for fib(n),there will be n number of function calls. If we define this
+                    // above while loop, previous computations will be reused, but there will be more space usage.
+                    Dictionary<int, long> calculatedFibonacciValues = new Dictionary<int, long>();
+
+                    int numberOfFunctionCalls = 0;
+
+                    Console.WriteLine($"fib({i}) is {FibonacciDPMyWay2(i, calculatedFibonacciValues, ref numberOfFunctionCalls)} with numberOfFunctionCalls: {numberOfFunctionCalls}");
+
+                    i++;
+                }
+                Console.WriteLine();
+            }
+        }
+
+        private long FibonacciDPMyWay2(int n, Dictionary<int, long> calculatedFibonacciValues, ref int numberOfFunctionCalls)
+        {
+            numberOfFunctionCalls++;
+            if (calculatedFibonacciValues.ContainsKey(n))
+                return calculatedFibonacciValues[n];
+
+            if (n < 3)
+            {
+                calculatedFibonacciValues.Add(n, n - 1);
+                return n - 1;
+            }
+
+            long result= FibonacciDPMyWay2(n - 1, calculatedFibonacciValues,ref numberOfFunctionCalls) + FibonacciDPMyWay2(n - 2, calculatedFibonacciValues,ref numberOfFunctionCalls);
+            calculatedFibonacciValues.Add(n, result);
+
+            return result;
+        }
     }
 }

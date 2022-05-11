@@ -69,9 +69,10 @@ namespace VinPrograms.Arrays
         //    //cp.CountPrimeNumbersUsing_Sieve_of_Eratosthenes_Method();
 
         //    //FibonacciSequence fs = new FibonacciSequence();
-        //    ////fs.FinbanacciWithIteration();
-        //    ////fs.FinbanacciWithRecursion();
-        //    //fs.FibonacciWithRecursionAndDPMyWay();
+        //    //////fs.FinbanacciWithIteration();
+        //    //////fs.FinbanacciWithRecursion();
+        //    ////fs.FibonacciWithRecursionAndDPMyWay();
+        //    //fs.FibonacciWithRecursionAndDPMyWay2();
 
         //    //SpellNumber sn = new SpellNumber();
         //    //sn.SpellANumberUsingRecursion();
