@@ -61,6 +61,9 @@ namespace VinPrograms.Arrays
         //    //CheckIfSortedRotatedArray cisra = new CheckIfSortedRotatedArray();
         //    //cisra.CheckIfAnArrayIsSortedAndRotated();
 
+        //    //SumOfDigits sd = new SumOfDigits();
+        //    //sd.PrintSumOfDigits();
+
         //    //SumOfTwoArrays sota = new SumOfTwoArrays();
         //    //sota.FindArraySum();
 
