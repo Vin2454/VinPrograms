@@ -17,10 +17,15 @@ namespace VinPrograms.Arrays
 
         private int ExponentRec(int m, int n)
         {
-            if (n == 0)
-                return 1;
+            //if (n == 0)
+            //    return 1;
 
-            return m * ExponentRec(m, n - 1); //e.g: 2^n = 2 * 2^(n-1)
+            //return m * ExponentRec(m, n - 1); //e.g: 2^n = 2 * 2^(n-1)
+
+            // OR
+            if (n == 1)
+                return m;
+            return m* ExponentRec(m, n - 1);
         }
 
         /// <summary>
