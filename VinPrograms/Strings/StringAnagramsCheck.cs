@@ -69,7 +69,8 @@ namespace VinPrograms.Strings
             int[] arr1 = new int[256];
             int[] arr2 = new int[256];
             //here these arrays will be intialized with all 0s and 
-            // index of these arrays are ASCII codes of characters.
+            // index of these arrays are ASCII codes of characters. 
+            // and str1[0] here will be 116 't'
 
             int i = 0;
             while (i < str1.Length)
