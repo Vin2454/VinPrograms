@@ -103,5 +103,23 @@ namespace VinPrograms.Strings
 
             Console.WriteLine(new string(s));
         }
+
+        public void ReverseWordsUsingRecursion_Draft()
+        {
+            string input = "the sky is blue";
+            string[] words = input.Split(' ');
+            int numberOfWords = words.Length;
+            RecReverseString(input, words, numberOfWords);
+            Console.ReadLine();
+        }
+
+        private void RecReverseString(string input, string[] words, int numberOfWords)
+        {
+            if (numberOfWords == 0)
+                return;
+
+            Console.WriteLine(words[numberOfWords - 1]);
+            RecReverseString(input, words, numberOfWords - 1);
+        }
     }
 }
