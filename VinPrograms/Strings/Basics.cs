@@ -29,11 +29,11 @@ namespace VinPrograms.Strings
             Console.WriteLine(inputRefined);
 
             // IndexOf(..) different overload methods
-            
+
             // Substring(int startIndex) ==> start to end
             // Substring(int startIndex,int length) ==> startIndex to specified length 
             // If you want to remove a character or some characters from a string, you can use Substring function
-            
+
             // Contains
             // ToCharArray()
             // Trim() has multiple overload methods like char, charArray..
@@ -44,6 +44,17 @@ namespace VinPrograms.Strings
             // StartsWith, EndsWith
             // LastIndexOf
             // ....etc...
+
+            string s = "Stuart";
+            string news = PrintstringRef(ref s);
+            Console.WriteLine("s:" + s + ";news: " + news);
+            // output:s:Little;news: Little
+            // if string is not passed by reference, output will be s:Stuart;news: Little
+        }
+        private static string PrintstringRef(ref string s)
+        {
+            s = "Little";
+            return s;
         }
     }
 }
