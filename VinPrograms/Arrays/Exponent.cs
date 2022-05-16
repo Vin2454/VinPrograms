@@ -51,8 +51,14 @@ namespace VinPrograms.Arrays
 
             int smallAnswer = FastExponentRec(m, n / 2);
 
-            // odd
+            //bool r1 = n % 2 == 0;
+            //if(r1)
+            //    Console.WriteLine("Even");
+            //else
+            //    Console.WriteLine("Odd");
+
             int r = n & 1;
+            // odd
             if (r == 1)
             {
                 return m * smallAnswer * smallAnswer;
