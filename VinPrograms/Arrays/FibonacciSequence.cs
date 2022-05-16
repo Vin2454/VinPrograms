@@ -82,7 +82,6 @@ namespace VinPrograms.Arrays
 
         public void FinbanacciWithRecursion()
         {
-
             while (true)
             {
                 Console.Write($"Enter number: ");
@@ -211,6 +210,32 @@ namespace VinPrograms.Arrays
             calculatedFibonacciValues.Add(n, result);
 
             return result;
+        }
+
+        public void FibonacciApnaCollege()
+        {
+            while (true)
+            {
+                Console.Write($"Enter number: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+
+                int a = 0;
+                int b = 1;
+                Console.Write(a +" ");
+                Console.Write(b + " ");
+                PrintFibApnaCollege(a, b, n - 2);
+
+                Console.WriteLine();
+            }
+        }
+
+        private void PrintFibApnaCollege(int a, int b, int n)
+        {
+            if (n == 0)
+                return;
+            int c = a + b;
+            Console.Write(c+ " ");
+            PrintFibApnaCollege(b, c, n - 1);
         }
     }
 }
