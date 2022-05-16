@@ -6,6 +6,9 @@ namespace VinPrograms.Arrays
 {
     public class Exponent
     {
+        /// <summary>
+        /// Stack height = n
+        /// </summary>
         public void PrintExponentUsingRecursion()
         {
             // e.g: 2^5...which means multiply 2 with 2 four times
@@ -29,6 +32,7 @@ namespace VinPrograms.Arrays
         }
 
         /// <summary>
+        /// Stack height = logn.
         /// Reduces complexity (tree levels here)
         /// </summary>
         public void PrintExponentUsingFastExponentiationRecursion()
