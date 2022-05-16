@@ -88,6 +88,33 @@ namespace VinPrograms.Strings
 
                 j--;
             }
+
+            //// OR
+            //// Start filling character from start
+            //char[] cArrNew = new char[newlength];
+            //int index = 0;
+
+            //char[] cArrOld = input.ToCharArray();
+            //int j = 0;
+            //while (j < cArrOld.Length)
+            //{
+            //    // inserts %20 in place of space
+            //    if (cArrOld[j] == ' ')
+            //    {
+            //        cArrNew[index] = '2';
+            //        cArrNew[index + 1] = '0';
+            //        cArrNew[index + 2] = '%';
+            //        index = index + 3;
+            //    }
+            //    else
+            //    {
+            //        cArrNew[index] = input[j];
+            //        index++;
+            //    }
+
+            //    j++;
+            //}
+
             Console.WriteLine(new String(cArrNew));
         }
     }
