@@ -27,7 +27,7 @@ namespace VinPrograms.Strings
 
             List<int> occurrences = new List<int>();
             int i = 0;
-            while (true)
+            while (true) // it will work with i<input.Length as well
             {
                 i = input.IndexOf(searchWord, i); //string value, int startIndex
                 if (i == -1)
