@@ -45,6 +45,10 @@ namespace VinPrograms.Strings
             // LastIndexOf
             // ....etc...
 
+            char a = 'a';
+            string s = "bc";
+            Console.WriteLine(a + s);// output: abc
+
             string s = "Stuart";
             string news = PrintstringRef(ref s);
             Console.WriteLine("s:" + s + ";news: " + news);
