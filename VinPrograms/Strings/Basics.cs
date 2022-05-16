@@ -46,8 +46,11 @@ namespace VinPrograms.Strings
             // ....etc...
 
             char a = 'a';
-            string s = "bc";
-            Console.WriteLine(a + s);// output: abc
+            string st = "bc";
+            Console.WriteLine(a + st);// output: 
+
+            Console.WriteLine('a' + 'b'); //output:97+98=195
+            Console.WriteLine('a' + "b"); //output: ab
 
             string s = "Stuart";
             string news = PrintstringRef(ref s);
