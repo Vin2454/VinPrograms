@@ -26,7 +26,7 @@ namespace VinPrograms.Recursion
         {
             if (str.Length <= 0)
             {
-                return str;
+                return string.Empty;
             }
             else
             {
