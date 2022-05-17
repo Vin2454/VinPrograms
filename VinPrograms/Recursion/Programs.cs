@@ -11,9 +11,12 @@ namespace VinPrograms.Recursion
         //    //ArraySum asm= new ArraySum();
         //    //asm.GetArraySum();
 
-        //    ReverseAString rs = new ReverseAString();
-        //    rs.PrintReverseWithRecWithIndex();
-        //    //rs.ReverseString();
+        //    //ReverseAString rs = new ReverseAString();
+        //    //rs.PrintReverseWithRecWithIndex();
+        //    ////rs.ReverseString();
+
+        //    //FirstAndLastOccurrenceOfCharacter fli = new FirstAndLastOccurrenceOfCharacter();
+        //    //fli.FirstAndLastOccurrenceOfElement();
 
         //    //Stairs srs = new Stairs();
         //    //srs.CountWays();
