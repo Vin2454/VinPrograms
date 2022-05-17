@@ -6,6 +6,21 @@ namespace VinPrograms.Recursion
 {
     public class ReverseAString
     {
+        public void PrintReverseWithRecWithIndex()
+        {
+            string input = "123456";
+            PrintReverseRec(input,input.Length-1);
+        }
+        public void PrintReverseRec(string str,int idx)
+        {
+            if(idx==0)
+            {
+                Console.WriteLine(str[0]); //print first character, means in the loop, it's last from end
+                return;
+            }
+            Console.WriteLine(str[idx]);
+            PrintReverseRec(str, idx - 1);
+        }
         public void ReverseString()
         {
             string input = "123456";

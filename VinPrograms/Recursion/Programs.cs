@@ -11,7 +11,8 @@ namespace VinPrograms.Recursion
         //    //ArraySum asm= new ArraySum();
         //    //asm.GetArraySum();
 
-        //    //ReverseAString rs = new ReverseAString();
+        //    ReverseAString rs = new ReverseAString();
+        //    rs.PrintReverseWithRecWithIndex();
         //    //rs.ReverseString();
 
         //    //Stairs srs = new Stairs();
