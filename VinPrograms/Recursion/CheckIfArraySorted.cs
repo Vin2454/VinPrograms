@@ -24,10 +24,7 @@ namespace VinPrograms.Recursion
             {
                 return false;
             }
-            else
-            {
-                return CheckStrictArraySorting(arr, i + 1);
-            }
+            return CheckStrictArraySorting(arr, i + 1);
         }
     }
 }
