@@ -18,6 +18,9 @@ namespace VinPrograms.Recursion
         //    //FirstAndLastOccurrenceOfCharacter fli = new FirstAndLastOccurrenceOfCharacter();
         //    //fli.FirstAndLastOccurrenceOfElement();
 
+        //    //CheckIfArraySorted cias = new CheckIfArraySorted();
+        //    //cias.CheckIfArrayStrictlySortedRec();
+
         //    //Stairs srs = new Stairs();
         //    //srs.CountWays();
 
