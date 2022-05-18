@@ -54,9 +54,6 @@ namespace VinPrograms.Strings
         //    //PermutationInAString pis = new PermutationInAString();
         //    //pis.PermuationInString();
 
-        //    //Subsequence ss = new Subsequence();
-        //    //ss.PrintAndSortSubsequenceWithRecursion();
-
         //    //PermutationsOfAString pos = new PermutationsOfAString();
         //    //pos.PermutationsOfString();
         //}

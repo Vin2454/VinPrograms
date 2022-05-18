@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VinPrograms.Strings
+namespace VinPrograms.Recursion
 {
     /// <summary>
     /// This is also called PowerSet
