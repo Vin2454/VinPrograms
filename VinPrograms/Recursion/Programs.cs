@@ -19,7 +19,10 @@ namespace VinPrograms.Recursion
         //    //fli.FirstAndLastOccurrenceOfElement();
 
         //    //CheckIfArraySorted cias = new CheckIfArraySorted();
-        //    //cias.CheckIfArrayStrictlySortedRec();
+        //    //cias.CheckIfArrayStrictlySortedRec(); 
+
+        //    //MoveAllXToEnd mazte = new MoveAllXToEnd();
+        //    //mazte.MoveAllXToTheEndRec();
 
         //    //Stairs srs = new Stairs();
         //    //srs.CountWays();

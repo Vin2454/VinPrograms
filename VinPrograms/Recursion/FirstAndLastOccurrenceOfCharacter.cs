@@ -33,6 +33,7 @@ namespace VinPrograms.Recursion
                 if (first == -1)
                 {
                     first = idx;
+                    last = idx;// if we dont update last here and if a character occurred only one time, it will show -1 for last which is incorrect
                 }
                 else
                 {
