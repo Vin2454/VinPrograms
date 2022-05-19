@@ -38,6 +38,10 @@ namespace VinPrograms.Recursion
 
         //    //Subsequence ss = new Subsequence();
         //    //ss.PrintAndSortSubsequenceWithRecursion();
+
+        //    //RecursionPractice rp = new RecursionPractice();
+        //    ////rp.HeadTail();
+        //    //rp.TwoInOne();
         //}
     }
 }
