@@ -97,8 +97,10 @@ namespace VinPrograms.Arrays
         //    ////gsa.PrintSubArrayWithRecursion();
 
         //    //ShiftArrayByNPositions sanp = new ShiftArrayByNPositions();
-        //    ////sanp.LeftShiftTheArrayByNPositions();
-        //    ////sanp.RightShiftTheArrayByNPositions();
+        //    ////sanp.LeftShiftTheArrayByNPositions_Method1();
+        //    ////sanp.RightShiftTheArrayByNPositions_Method1();
+        //    ////sanp.LeftShiftTheArrayByNPositions_Method2();
+        //    ////sanp.LeftShiftTheArrayByNPositions_Method3();
         //}
     }
 }
