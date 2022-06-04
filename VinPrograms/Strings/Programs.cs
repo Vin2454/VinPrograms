@@ -56,6 +56,9 @@ namespace VinPrograms.Strings
 
         //    //PermutationsOfAString pos = new PermutationsOfAString();
         //    //pos.PermutationsOfString();
+
+        //    //LongestHappyString lhs = new LongestHappyString();
+        //    //lhs.LongestDiverseString();
         //}
     }
 }
