@@ -25,18 +25,19 @@ namespace VinPrograms.PriorityQueues
 
             while (pq.Count != 0)
             {
-                Console.WriteLine(pq.Dequeue());
+                pq.TryDequeue(out char element, out int priority);
+                Console.WriteLine($"element:{element}; priority:{priority}");
             }
         }
     }
 
     public class MyComparer : IComparer<int>
     {
-        /// below for priority ascending order
+        ///// below for priority ascending order
         //public int Compare(int x, int y)
         //{
-        //    if(x==y) return 0;
-        //    else if(x>y) return 1;
+        //    if (x == y) return 0;
+        //    else if (x > y) return 1;
         //    else return -1;
         //}
 

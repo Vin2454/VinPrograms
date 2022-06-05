@@ -6,8 +6,8 @@ namespace VinPrograms.PriorityQueues
     {
         //static void Main(string[] args)
         //{
-        //    //CSharp10PQ cspq = new CSharp10PQ();
-        //    //cspq.UnderstandPriorityQueue();
+        //    CSharp10PQ cspq = new CSharp10PQ();
+        //    cspq.UnderstandPriorityQueue();
         //}
     }
 }
