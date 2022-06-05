@@ -12,13 +12,14 @@ namespace VinPrograms.PriorityQueues
         {
             int a = 4, b = 5, c = 1;
 
-            //PriorityQueue<char, int> pq = new PriorityQueue<char, int>();//default is like: Comparer<int>.Create((a, b) => a.CompareTo(b))
-            // the above stores priority in ascending order
+            PriorityQueue<char, int> pq = new PriorityQueue<char, int>(); //default(dequeue from lowest prority number), which will be like below
+            //PriorityQueue<char, int> pq = new PriorityQueue<char, int>(Comparer<int>.Create((a, b) => a.CompareTo(b)));
+            // the above dequeue from lowest prority number
 
             //PriorityQueue<char, int> pq = new PriorityQueue<char, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
-            // the above stores priority in descending order
-            
-            PriorityQueue<char, int> pq = new PriorityQueue<char, int>(new MyComparer());
+            // the above dequeue from highest prority number
+
+            //PriorityQueue<char, int> pq = new PriorityQueue<char, int>(new MyComparer());
             pq.Enqueue('a', a);
             pq.Enqueue('b', b);
             pq.Enqueue('c', c);
@@ -33,7 +34,7 @@ namespace VinPrograms.PriorityQueues
 
     public class MyComparer : IComparer<int>
     {
-        ///// below for priority ascending order
+        ///// below for dequeue from lowest prority number
         //public int Compare(int x, int y)
         //{
         //    if (x == y) return 0;
@@ -41,7 +42,7 @@ namespace VinPrograms.PriorityQueues
         //    else return -1;
         //}
 
-        /// below for priority descending order
+        /// below for dequeue from highest prority number
         public int Compare(int x, int y)
         {
             if (x == y) return 0;
