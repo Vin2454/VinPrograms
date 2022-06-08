@@ -104,6 +104,9 @@ namespace VinPrograms.Arrays
 
         //    //Maximum69Number max69 = new Maximum69Number();
         //    //max69.Max69Number();
+
+        //    //LengthOfLastWordInAString lolwis=new LengthOfLastWordInAString();
+        //    //lolwis.LengthOfTheLastWordInString();
         //}
     }
 }
