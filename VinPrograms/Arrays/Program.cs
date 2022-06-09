@@ -107,6 +107,10 @@ namespace VinPrograms.Arrays
 
         //    //LengthOfLastWordInAString lolwis=new LengthOfLastWordInAString();
         //    //lolwis.LengthOfTheLastWordInString();
+
+        //    //LongestCommonPrefix lcp = new LongestCommonPrefix();
+        //    //lcp.FindLongestCommonPrefixMyApproach1();
+        //    //lcp.FindLongestCommonPrefixMyApproach2();
         //}
     }
 }
