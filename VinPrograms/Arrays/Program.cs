@@ -118,6 +118,9 @@ namespace VinPrograms.Arrays
 
         //    //ExcelSheetColumnNumber escn = new ExcelSheetColumnNumber();
         //    //escn.ExcelSheetColumnTitleNumber();
+
+        //    //ValidPalindrome vp = new ValidPalindrome();
+        //    //vp.ValidPalindrome1();
         //}
     }
 }
