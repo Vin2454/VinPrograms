@@ -65,6 +65,9 @@ namespace VinPrograms.Strings
             Console.WriteLine("s:" + s + ";news: " + news);
             // output:s:Little;news: Little
             // if string is not passed by reference, output will be s:Stuart;news: Little
+
+            char c = 'a';
+            Console.WriteLine(char.ToUpper(c));
         }
         private static string PrintstringRef(ref string s)
         {
