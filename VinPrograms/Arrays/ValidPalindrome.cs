@@ -40,5 +40,57 @@ namespace VinPrograms.Arrays
 
             return true;
         }
+
+        //https://leetcode.com/problems/valid-palindrome-ii/
+        public void ValidPalindrome2_With_Atmost_OneChar_Remove()
+        {
+            string input = "abca";
+            // expected output: true . remove c, aba become palindrome
+            Console.WriteLine(validPalindrome2(input));
+        }
+
+        bool validPalindrome2(string A)
+        {
+            int s = 0;
+            int e = A.Length - 1;
+
+            while (s <= e)
+            {
+                if (A[s] != A[e])
+                {
+                    /// 2 cases
+                    /// delete s  check for A[s+1...e]
+                    /// delete e check for A[s...e-1]
+                    if (check(A, s + 1, e) || check(A, s, e - 1))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        /// after deleting 1 char we are unable to obtain a palin
+                        return false;
+                    }
+                }
+                s++;
+                e--;
+            }
+
+            /// string is already palin
+            return true;
+        }
+        bool check(string A, int s, int e)
+        {
+            while (s <= e)
+            {
+                if (A[s] != A[e])
+                {
+                    return false;
+                }
+                s++;
+                e--;
+            }
+            return true;
+        }
+
     }
 }

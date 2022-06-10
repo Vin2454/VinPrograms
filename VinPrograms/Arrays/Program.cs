@@ -120,7 +120,8 @@ namespace VinPrograms.Arrays
         //    //escn.ExcelSheetColumnTitleNumber();
 
         //    //ValidPalindrome vp = new ValidPalindrome();
-        //    //vp.ValidPalindrome1();
+        //    ////vp.ValidPalindrome1();
+        //    //vp.ValidPalindrome2_With_Atmost_OneChar_Remove();
         //}
     }
 }
