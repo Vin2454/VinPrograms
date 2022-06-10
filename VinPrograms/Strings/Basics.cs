@@ -22,6 +22,9 @@ namespace VinPrograms.Strings
 
             }
 
+            // syntax to define string array without mentioning size
+            string[] tokens = new string[] { "2", "1", "+", "3", "*" };
+
             // error for below: this cant be assigned, it's readonly
             //inputRefined[0] = '3';
 
