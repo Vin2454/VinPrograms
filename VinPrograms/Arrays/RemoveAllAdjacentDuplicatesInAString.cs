@@ -17,7 +17,6 @@ namespace VinPrograms.Arrays
             //string s = "azxxzy";//expected output: "ay"
             string s = "mississippi";//expected output: "m"
 
-
             StringBuilder sb = new StringBuilder();
             Stack<char> stack = new Stack<char>();
             stack.Push(s[0]);
