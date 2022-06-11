@@ -92,7 +92,8 @@ namespace VinPrograms.Arrays
             for (int i = 0; i < cArr.Length; i++)
             {
                 char currentChar = cArr[i];
-                if (stackPointer == -1 || currentChar != cArr[stackPointer])
+                if (stackPointer == -1 || currentChar != cArr[stackPointer]) //here if you want to avoid the condition stackPointer == -1,
+                                                                             //you can start from i=1 and initialize stackPointer to 0
                 {
                     stackPointer++;
                     cArr[stackPointer] = cArr[i];
