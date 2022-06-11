@@ -11,7 +11,7 @@ namespace VinPrograms.Arrays
         public void RemoveAdjacentDuplicatesInStringUsingStack()
         {
             //string s = "abbaca";//expected output: "ca"
-            //string input = "azxxzy";//expected output: "ay"
+            //string s = "azxxzy";//expected output: "ay"
             string s = "mississippi";//expected output: "m"
 
 
@@ -48,6 +48,27 @@ namespace VinPrograms.Arrays
                 char element = stack.Pop();
                 ReversePrintRec(stack, i - 1, cArr);
                 cArr[i] = element;
+            }
+        }
+
+        public void RemoveAdjacentDuplicatesInStringUsingHashSet()
+        {
+            string s = "abbaca";//expected output: "ca"
+            //string s = "azxxzy";//expected output: "ay"
+            //string s = "mississippi";//expected output: "m"
+
+            HashSet<char> hs = new HashSet<char>();
+            for(int i=0;i<s.Length;i++)
+            {
+                if (!hs.Contains(s[i]))
+                    hs.Add(s[i]);
+                else
+                    hs.Remove(s[i]);
+            }
+
+            foreach (var item in hs)
+            {
+                Console.WriteLine(item);
             }
         }
     }
