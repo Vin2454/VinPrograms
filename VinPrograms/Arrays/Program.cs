@@ -122,6 +122,9 @@ namespace VinPrograms.Arrays
         //    //ValidPalindrome vp = new ValidPalindrome();
         //    ////vp.ValidPalindrome1();
         //    //vp.ValidPalindrome2_With_Atmost_OneChar_Remove();
+
+        //    //RemoveAllAdjacentDuplicatesInAString raadis = new RemoveAllAdjacentDuplicatesInAString();
+        //    //raadis.RemoveAdjacentDuplicatesInStringUsingStack();
         //}
     }
 }
