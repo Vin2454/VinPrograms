@@ -8,6 +8,9 @@ namespace VinPrograms.Arrays
 {
     public class RemoveAllAdjacentDuplicatesInAString
     {
+        /// <summary>
+        /// Time Complexity: O(n), Space Complexity: O(n)
+        /// </summary>
         public void RemoveAdjacentDuplicatesInStringUsingStack()
         {
             //string s = "abbaca";//expected output: "ca"
@@ -22,7 +25,7 @@ namespace VinPrograms.Arrays
             int i = 1;
             while (i < s.Length)
             {
-                if (stack.Count > 0 && s[i]==stack.Peek())
+                if (stack.Count > 0 && s[i] == stack.Peek())
                 {
                     stack.Pop();
                 }
@@ -38,7 +41,6 @@ namespace VinPrograms.Arrays
             ReversePrintRec(stack, stack.Count - 1, cArr);
             Console.WriteLine(new String(cArr));
         }
-
         private void ReversePrintRec(Stack<char> stack, int i, char[] cArr)
         {
             if (stack.Count == 0)
@@ -51,6 +53,9 @@ namespace VinPrograms.Arrays
             }
         }
 
+        /// <summary>
+        /// Time Complexity: O(n), Space Complexity: O(n)
+        /// </summary>
         public void RemoveAdjacentDuplicatesInStringUsingHashSet()
         {
             string s = "abbaca";//expected output: "ca"
@@ -58,7 +63,7 @@ namespace VinPrograms.Arrays
             //string s = "mississippi";//expected output: "m"
 
             HashSet<char> hs = new HashSet<char>();
-            for(int i=0;i<s.Length;i++)
+            for (int i = 0; i < s.Length; i++)
             {
                 if (!hs.Contains(s[i]))
                     hs.Add(s[i]);
@@ -70,6 +75,41 @@ namespace VinPrograms.Arrays
             {
                 Console.WriteLine(item);
             }
+        }
+
+        /// <summary>
+        /// Time Complexity: O(n), Space Complexity: O(1)
+        /// Also called inplace stack
+        /// </summary>
+        public void RemoveAdjacentDuplicatesInString_WithoutUsing_StackOrHashSet_ItIsInplace()
+        {
+            //string s = "abbaca";//expected output: "ca"
+            //string s = "azxxzy";//expected output: "ay"
+            string s = "mississippi";//expected output: "m"
+            char[] cArr = s.ToCharArray();
+
+            int stackPointer = -1;
+            for (int i = 0; i < cArr.Length; i++)
+            {
+                char currentChar = cArr[i];
+                if (stackPointer == -1 || currentChar != cArr[stackPointer])
+                {
+                    stackPointer++;
+                    cArr[stackPointer] = cArr[i];
+                }
+                else
+                {
+                    stackPointer--;
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i <=stackPointer; i++)
+            {
+                sb.Append(cArr[i]);
+            }
+
+            Console.WriteLine(sb.ToString());
         }
     }
 }
