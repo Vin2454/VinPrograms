@@ -10,6 +10,7 @@ namespace VinPrograms.Recursion
         {
             int[] arr = { 1,2,3,4,4,8 };
             Console.WriteLine(CheckStrictArraySorting(arr, 0));
+            Console.WriteLine(CheckStrictArraySortingApproach2(arr,arr.Length));
             Console.ReadLine();
         }
 
@@ -25,6 +26,22 @@ namespace VinPrograms.Recursion
                 return false;
             }
             return CheckStrictArraySorting(arr, i + 1);
+        }
+
+        private bool CheckStrictArraySortingApproach2(int[] arr, int i)
+        {
+            // Array has one or no element or the
+            // rest are already checked and approved.
+            if (i == 1 || i == 0)
+                return true;
+
+            // Unsorted pair found (Equal values allowed)
+            if (arr[i - 1] < arr[i - 2])
+                return false;
+
+            // Last pair was sorted
+            // Keep on checking
+            return CheckStrictArraySortingApproach2(arr, i - 1);
         }
     }
 }
