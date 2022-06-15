@@ -19,6 +19,9 @@ namespace VinPrograms.Strings
             string input = "ABC";
             Permute(input, 0, input.Length - 1);
             Console.WriteLine($"swapsCount: {swapsCount}");
+
+            //char[] str = "ABC".ToCharArray();
+            //PrintPermu2(str);
         }
 
         private void Permute(string str, int left, int right)
@@ -51,5 +54,20 @@ namespace VinPrograms.Strings
 
             return new string(cArray);
         }
+
+        //void PrintPermu2(char[] str, int i = 0)
+        //{
+        //    if (str[i] == ' ')
+        //    {
+        //        Console.WriteLine(str);
+        //        return;
+        //    }
+        //    for (int j = i; str[j] != ' '; j++)
+        //    {
+        //        CharSwap(new string(str), i,j);
+        //        PrintPermu2(str, i + 1);
+        //        CharSwap(new string(str), i, j);
+        //    }
+        //}
     }
 }
